@@ -1,0 +1,258 @@
+@import "mixins.scss";
+
+.footer {
+  padding: 64px 0 38px 0;
+  background: #5294ab;
+  position: relative;
+  @include b(tablet) {
+    padding:  32px 0 26px 0;
+  }
+  @include b(mobile) {
+    padding:  24px 0 34px 0;
+  }
+  
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__wrap {
+  }
+
+  &__wrap-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include b(mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @include b(mobile) {
+      order: 1;
+    }
+    &_address {
+      margin-bottom: 86px;
+      @include b(mobile) {
+        margin-bottom: 24px;
+      }
+      p {
+        color: #fff;
+        line-height: 21px;
+        display: block;
+        @include b(tablet) {
+          font-size: 12px;
+          line-height: 15px;
+        }
+        @include b(mobile) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    &_contacts {
+      display: flex;
+      flex-direction: column;
+      @include b(mobile) {
+        order: 3;
+      }
+    }
+
+    &_links {
+      @include b(mobile) {
+        order: 2;
+        margin-bottom: 35px;
+      }
+      li {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        color: #fff;
+        font-size: 18px;
+        line-height: 19px;
+        text-transform: uppercase;
+        @include b(tablet) {
+          font-size: 14px;
+          line-height: 19px;
+        }
+
+        @include b(mobile) {
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 330px;
+    span {
+      font-size: 16px;
+      color: #fff;
+      @include b(mobile) {
+        display: none;
+      }
+    }
+    @include b(mobile) {
+      margin-bottom: 24px;
+      order: 1;
+    }
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      }
+    }
+  
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    @include b(tablet) {
+      display: block;
+      span {
+        display: block;
+      }
+    }
+    @include b(mobile) {
+      display: none;
+    }
+  }
+
+  &__contacts_wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    @include b(mobile) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__contact_email {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    @include b(tablet) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    @include b(mobile) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  &__contact_phone {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px;
+    @include b(tablet) {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    @include b(mobile) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  &__social,
+  &__payment {
+    margin-bottom: 36px;
+    @include b(tablet) {
+      margin-bottom: 28px;
+    }
+    span {
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 21px;
+      margin-bottom: 4px;
+      @include b(tablet) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    a {
+      padding-right: 16px;
+      display: inline-block;
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @include b(tablet) {
+        padding-right: 0px;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    
+  }
+
+  &__payment {
+    margin-bottom: 0;
+    @include b(mobile) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__scrollUp {
+    display: flex;
+    align-items: flex-end;
+    @include b(mobile) {
+      position: absolute;
+      bottom: 64px;
+      right: 65px;
+    }
+  }
+
+  &__scroll-wrap {
+    border: 2px solid #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    @include b(tablet) {
+      width: 45px;
+      height: 45px;
+      img {
+        max-width: 21px;
+        max-height: 12px;
+      }
+    }
+    
+  }
+
+  &__copyright-responsive {
+    display: none;
+    @include b(mobile) {
+      display: block;
+      order: 6;
+      color: #fff;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}

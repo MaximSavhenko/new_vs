@@ -1,0 +1,129 @@
+.product {
+  &__tabs {
+    margin-bottom: 120px;
+  }
+
+  &__tabs-wrapp {
+  }
+
+  &__description-title {
+    line-height: 28px;
+    color: #f60403;
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  &__description {
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  &__previews-author {
+      margin-bottom: 32px;
+  }
+
+  &__previews-author-wrapp{
+    display: flex;
+    margin-bottom: 16px;
+    span {
+        text-transform: uppercase;
+        font-weight: 500;
+
+      }
+
+      p {
+          display: inline-block;
+          text-transform: uppercase;
+          margin-left: 5px;
+      }
+  }
+
+  &__previews-author-date{
+      font-weight: 500;
+  }
+
+  &__previews-descr {
+      p {
+          font-weight: 300;
+          line-height: 22px;
+          margin-bottom: 24px;
+      }
+  }
+
+  &__previews-slider {
+    margin-bottom: 24px;
+    .slick-track {
+      display: flex;
+      
+    }
+    
+    .slick-list {
+      overflow: hidden;
+    }
+    
+    .slick-slider {
+      position: relative;
+    }
+    
+    .slick-arrow {
+      font-size: 0;
+      display: block;
+      position: absolute;
+      top: 50%;
+      border: none;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      width: 14px;
+      height: 14px;
+      &.slick-prev {
+        left: 0;
+        transform: rotate(45deg);
+      }
+      &.slick-next {
+      transform: rotate(-135deg);
+        right: 0;
+      }
+    }
+    
+  }
+
+  &__previews-slider-item {
+    img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__previews-advantages {
+    span {
+      font-weight: 500;
+    }
+    ul {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__previews-comments {
+    background-color: #E4E4E4;
+    border-radius: 6px;
+    padding: 40px 31px;
+  }
+
+  &__previews-comments-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    display: block;
+  }
+
+  &__previews-comments-text {
+    font-size: 16px;
+    line-height: 20px;
+
+  }
+}
+
+
