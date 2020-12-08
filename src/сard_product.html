@@ -101,7 +101,7 @@ title: сard product
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">ОПЛАТА И ДОСТАВКА</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">ОТЗЫВЫ</a>
+          <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">ОТЗЫВЫ</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
@@ -160,7 +160,7 @@ title: сard product
             </ul>
           </div>
           <div class="product__previews-comments">
-            <ul>
+            <ul            >
               <li class="product__previews-comments-name">ответ магазина</li>
               <li class="product__previews-comments-text">Надежда, добрый день!
                 Благодарим за высокую оценку. Рады, что платья понравились вам, а покупка модели нового цвета была вдвойне приятной. Желаем, чтобы каждая покупка дарила приятные эмоции.
@@ -168,28 +168,246 @@ title: сard product
             </ul>
           </div>
         </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">.3..</div>
-        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">..4.</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="product__previews-payment">
+            <p class="product__previews-paymen-title">При розничном заказе от 700 грн - бесплатная  доставка ТК «Нова Пошта»​ и ТК «Укрпошта»  в пределах Украины!</p>
+            <p class="product__previews-paymen-title">ДОСТАВКА И ОПЛАТА ПО УКРАИНЕ</p>
+            <p>Доставка товара по Украине осуществляется транспортными компаниями “НОВАЯ ПОЧТА”, “УКРПОЧТА” и “АВТОЛЮКС” в течении 1-3 рабочих дней. Отгрузка товара осуществляется только после 100% предоплаты. На сегодняшний день мы предлагаем следующие способы оплаты:</p>
+            <ol class="product__previews-paymen-list">
+              <li>Оплата на карточный счет Приват Банка;</li>
+              <li>Перечисление на расчетный счет;</li>
+              <li>Наложенный платеж.</li>
+            </ol>
+            <div class="product__previews-payment-transportation">
+              <div class="product__previews-payment-img"><a href="#"><img src="./assets/images/svg/Nova_Poshta.svg" alt="Новая почта"></a></div>
+              <div class="product__previews-payment-img"><a href="#"><img src="./assets/images/svg/ukrposhta.svg" alt="Укрпочта"></a></div>
+              <div class="product__previews-payment-img"><a href="#"><img src="./assets/images/svg/autolux.svg" alt="Автолюкс"></a></div>
+            </div>
+            <p class="product__previews-paymen-title">МЕЖДУНАРОДНАЯ ДОСТАВКА И ОПЛАТА</p>
+            <p>Международная доставка по всему миру осуществляется ТК “УКРПОЧТА” либо другими транспортными компаниями. 
+              Стоимость доставки зависит от веса, объема и курса доллара, поэтому примерную сумму за пересылку мы сможем просчитать после того, как получим заказ, оформленный на нашем сайте. 
+              Сроки, способы оплаты и конкретная служба доставки обсуждаются в индивидуальном порядке с менеджером нашего интернет магазина. 
+              Заказ отправляется после 100% предоплаты (стоимость товара + доставка).
+            </p>
+            <p>Возможна оплата банковскими картами Visa, MasterCard, которая  производится через сервис моментальных платежей  Liqpay.  
+              После подтверждения заказа вам на электронный адрес придет счет (инвойс) с подробными инструкциями по оплате и ссылкой на страницу платежной системы, где вы сможете оплатить заказ. 
+            </p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+          <div class="product__previews-recall">
+            <div class="product__previews-recall-btn">
+              <p class="product__previews-recall-title">отзывы</p>
+              <button type="submit" class="btn btn--turquoise">написать отзыв</button>
+            </div>
+            <div class="product__previews-recall-messages">
+              <div class="product__previews-comments product__previews-comments--indent">
+                <ul>
+                  <li class="product__previews-comments-name">Надежда</li>
+                  <li class="product__previews-comments-rating">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                  </li>
+                  <li class="product__previews-comments-text product__previews-comments-text--indent">Надежда, добрый день!
+                    Благодарим за высокую оценку. Рады, что платья понравились вам, а покупка модели нового цвета была вдвойне приятной. Желаем, чтобы каждая покупка дарила приятные эмоции.
+                    Хорошего дня!</li>
+                    <li class="product__previews-comments-date">
+                      <time datetime="2020-06-19">19 июня 2020</time>
+                    </li>
+                </ul>
+              </div>
+              <div class="product__previews-comments product__previews-comments--indent">
+                <ul>
+                  <li class="product__previews-comments-name">ответ магазина</li>
+                  <li class="product__previews-comments-text product__previews-comments-text--indent">Надежда, добрый день!
+                    Благодарим за высокую оценку. Рады, что платья понравились вам, а покупка модели нового цвета была вдвойне приятной. Желаем, чтобы каждая покупка дарила приятные эмоции.
+                    Хорошего дня!
+                  </li>
+                  <li class="product__previews-comments-date">
+                    <time datetime="2020-06-19">19 июня 2020</time>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__previews-comments product__previews-comments--indent">
+                <ul>
+                  <li class="product__previews-comments-name">Надежда</li>
+                  <li class="product__previews-comments-rating">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                    <img src="./assets/images/svg/rating.svg" alt="рейтинг">
+                  </li>
+                  <li class="product__previews-comments-text product__previews-comments-text--indent">Надежда, добрый день!
+                    Благодарим за высокую оценку. Рады, что платья понравились вам, а покупка модели нового цвета была вдвойне приятной. Желаем, чтобы каждая покупка дарила приятные эмоции.
+                    Хорошего дня!</li>
+                  <li class="product__previews-comments-date">
+                    <time datetime="2020-06-19">19 июня 2020</time>
+                  </li>
+                </ul>
+              </div>
+              <div class="product__previews-comments product__previews-comments--indent">
+                <ul>
+                  <li class="product__previews-comments-name">ответ магазина</li>
+                  <li class="product__previews-comments-text product__previews-comments-text--indent">Надежда, добрый день!
+                    Благодарим за высокую оценку. Рады, что платья понравились вам, а покупка модели нового цвета была вдвойне приятной. Желаем, чтобы каждая покупка дарила приятные эмоции.
+                    Хорошего дня!
+                  </li>
+                  <li class="product__previews-comments-date">
+                    <time datetime="2020-06-19">19 июня 2020</time>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product__previews-recall-next">
+              <button class="product__previews-recall-nextBtn">посмотреть все отзывы</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="product__viewed">
+ <div class="container container--page">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="viewed_products-tab" data-toggle="tab" href="#viewed_products" role="tab" aria-controls="viewed_products" aria-selected="true">ПРОСМОТРЕННЫЕ ТОВАРЫ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="recommended-tab" data-toggle="tab" href="#recommended" role="tab" aria-controls="recommended" aria-selected="false">РЕКОМЕНДОВАННЫЕ</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="viewed_products" role="tabpanel" aria-labelledby="viewed_products">
+        <div class="product__viewed-slider">
+          <div class="product__viewed-slider-item">
+            <div class="topMenu__hiddenMenu-card topMenu__hiddenMenu-card--other_w mr-0">
+              <div class="topMenu__hiddenMenu-card-img">
+                  <a href="#"><img src="./assets/images/item1.png" alt="spruce"></a>
+              </div>
+              <p class="topMenu__hiddenMenu-card-descr topMenu__hiddenMenu-card-descr--fz18">Органайзер для бисера с прозрачной крышкой
+                  FLZB-023</p>
+              <div class="topMenu__hiddenMenu-card-rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <span><a href="#">30 отзывов</a></span>
+              </div>
+              <div class="topMenu__hiddenMenu-card-property">
+                  <div class="topMenu__hiddenMenu-card-article">
+                      <p>Артикул: <span>FLZB-023</span></p>
+                      <p>Размер: <span>14х14,5см</span></p>
+                  </div>
+                  <span class="topMenu__hiddenMenu-card-prise">130 грн</span>
+              </div>
+            </div>  
+          </div>
+          <div class="product__viewed-slider-item">
+            <div class="topMenu__hiddenMenu-card topMenu__hiddenMenu-card--other_w mr-0">
+              <div class="topMenu__hiddenMenu-card-img">
+                  <a href="#"><img src="./assets/images/yalinkova300.png" alt="spruce"></a>
+              </div>
+              <p class="topMenu__hiddenMenu-card-descr topMenu__hiddenMenu-card-descr--fz18">Органайзер для бисера с прозрачной крышкой
+                  FLZB-023</p>
+              <div class="topMenu__hiddenMenu-card-rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <span><a href="#">30 отзывов</a></span>
+              </div>
+              <div class="topMenu__hiddenMenu-card-property">
+                  <div class="topMenu__hiddenMenu-card-article">
+                      <p>Артикул: <span>FLZB-023</span></p>
+                      <p>Размер: <span>14х14,5см</span></p>
+                  </div>
+                  <span class="topMenu__hiddenMenu-card-prise">130 грн</span>
+              </div>
+            </div>  
+          </div>
+          <div class="product__viewed-slider-item">
+            <div class="topMenu__hiddenMenu-card topMenu__hiddenMenu-card--other_w mr-0">
+              <div class="topMenu__hiddenMenu-card-img">
+                  <a href="#"><img src="./assets/images/star_item.png" alt="spruce"></a>
+              </div>
+              <p class="topMenu__hiddenMenu-card-descr topMenu__hiddenMenu-card-descr--fz18">Органайзер для бисера с прозрачной крышкой
+                  FLZB-023</p>
+              <div class="topMenu__hiddenMenu-card-rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <span><a href="#">30 отзывов</a></span>
+              </div>
+              <div class="topMenu__hiddenMenu-card-property">
+                  <div class="topMenu__hiddenMenu-card-article">
+                      <p>Артикул: <span>FLZB-023</span></p>
+                      <p>Размер: <span>14х14,5см</span></p>
+                  </div>
+                  <span class="topMenu__hiddenMenu-card-prise">130 грн</span>
+              </div>
+            </div>  
+          </div>
+          <div class="product__viewed-slider-item">
+            <div class="topMenu__hiddenMenu-card topMenu__hiddenMenu-card--other_w mr-0">
+              <div class="topMenu__hiddenMenu-card-img">
+                  <a href="#"><img src="./assets/images/varejka.png" alt="spruce"></a>
+              </div>
+              <p class="topMenu__hiddenMenu-card-descr topMenu__hiddenMenu-card-descr--fz18">Органайзер для бисера с прозрачной крышкой
+                  FLZB-023</p>
+              <div class="topMenu__hiddenMenu-card-rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <span><a href="#">30 отзывов</a></span>
+              </div>
+              <div class="topMenu__hiddenMenu-card-property">
+                  <div class="topMenu__hiddenMenu-card-article">
+                      <p>Артикул: <span>FLZB-023</span></p>
+                      <p>Размер: <span>14х14,5см</span></p>
+                  </div>
+                  <span class="topMenu__hiddenMenu-card-prise">130 грн</span>
+              </div>
+            </div>  
+          </div>
+          <div class="product__viewed-slider-item">
+            <div class="topMenu__hiddenMenu-card topMenu__hiddenMenu-card--other_w mr-0">
+              <div class="topMenu__hiddenMenu-card-img">
+                  <a href="#"><img src="./assets/images/svg/spruce.png" alt="spruce"></a>
+              </div>
+              <p class="topMenu__hiddenMenu-card-descr topMenu__hiddenMenu-card-descr--fz18">Органайзер для бисера с прозрачной крышкой
+                  FLZB-023</p>
+              <div class="topMenu__hiddenMenu-card-rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <img src="/assets/images/svg/rating.svg" alt="rating">
+                  <span><a href="#">30 отзывов</a></span>
+              </div>
+              <div class="topMenu__hiddenMenu-card-property">
+                  <div class="topMenu__hiddenMenu-card-article">
+                      <p>Артикул: <span>FLZB-023</span></p>
+                      <p>Размер: <span>14х14,5см</span></p>
+                  </div>
+                  <span class="topMenu__hiddenMenu-card-prise">130 грн</span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="recommended" role="tabpanel" aria-labelledby="recommended">1</div>
+    </div>
+ </div>
+</div>
