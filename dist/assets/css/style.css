@@ -201,6 +201,7 @@ h2 {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif, Arial;
     background-color: #9E3D5F;
+    border: 1px solid #9E3D5F;
     border-radius: 4px;
     text-align: center;
     padding: 0 27px;
@@ -210,7 +211,6 @@ h2 {
 }
 
 .btn:hover {
-    border: 1px solid #9E3D5F;
     background-color: #fff;
     color: #9E3D5F;
 }
@@ -2055,6 +2055,82 @@ textarea:focus {
     font-weight: 300;
     line-height: 22px;
     margin-bottom: 24px;
+}
+
+.product__previews-slider {
+    margin-bottom: 24px;
+}
+
+.product__previews-slider .slick-track {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.product__previews-slider .slick-list {
+    overflow: hidden;
+}
+
+.product__previews-slider .slick-slider {
+    position: relative;
+}
+
+.product__previews-slider .slick-arrow {
+    font-size: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    width: 14px;
+    height: 14px;
+}
+
+.product__previews-slider .slick-arrow.slick-prev {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.product__previews-slider .slick-arrow.slick-next {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    right: 0;
+}
+
+.product__previews-slider-item img {
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.product__previews-advantages span {
+    font-weight: 500;
+}
+
+.product__previews-advantages ul {
+    margin-bottom: 24px;
+}
+
+.product__previews-comments {
+    background-color: #E4E4E4;
+    border-radius: 6px;
+    padding: 40px 31px;
+}
+
+.product__previews-comments-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.product__previews-comments-text {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .nav {
