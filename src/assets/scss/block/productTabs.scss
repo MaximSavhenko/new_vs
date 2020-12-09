@@ -254,23 +254,48 @@
       width: 30px;
       height: 30px;
       &.slick-prev {
-        left: 0;
+        left: -54px;
         transform: rotate(45deg);
       }
       &.slick-next {
       transform: rotate(-135deg);
-        right: 0;
+        right: -54px;
       }
     }
   }
 
   &__viewed-slider {
-    
+    position: relative;
+    .slick-dots {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: -32px;
+      li {
+        font-size: 0;
+        width: 6px;
+        height: 6px;
+        background-color: #CAC7C7;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .slick-active {
+        background: #979797;
+        width: 8px;
+        height: 8px;
+      }
   }
+
+}
 
   &__viewed-slider-item {
     display: flex;
     justify-content: center;
+    @include b(1024) {
+      width: 50%;
+    }
   }
     
 }

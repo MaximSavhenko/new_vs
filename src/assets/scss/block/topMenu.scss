@@ -404,23 +404,24 @@
   &__hiddenMenu-card-property {
     display: flex;
     justify-content: space-between;
+    
+  }
+  
+
+  &__hiddenMenu-card-article {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      margin-left: 16px;
+    }
     p {
       font-size: 14px;
       font-weight: 500;
       display: inline;
       text-align: end;
     }
-      span {
-        font-weight: 400;
-        font-size: 14px;
-        margin-left: 16px;
-      }
-    }
-  
-
-  &__hiddenMenu-card-article {
-    display: flex;
-    flex-direction: column;
   }
 
   &__hiddenMenu-card-prise {

@@ -97,14 +97,14 @@ eval("function toggleMobileMenu() {\r\n    var btnMenu = document.querySelector(
 
 /***/ }),
 
-/***/ "./src/assets/js/file2.js":
-/*!********************************!*\
-  !*** ./src/assets/js/file2.js ***!
-  \********************************/
+/***/ "./src/assets/js/counter.js":
+/*!**********************************!*\
+  !*** ./src/assets/js/counter.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack:///./src/assets/js/file2.js?");
+eval("\n\n//# sourceURL=webpack:///./src/assets/js/counter.js?");
 
 /***/ }),
 
@@ -115,18 +115,18 @@ eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack:///./src/assets/js/fil
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function(){\r\n    $('.product__wrap-slider').slick({\r\n      vertical: true,\r\n      verticalSwiping: true,\r\n      slidesToShow: 3,\r\n      arrows: true\r\n    });\r\n  });\r\n\r\n$(document).ready(function(){\r\n    $('.product__previews-slider').slick({\r\n      // centerMode: true,\r\n      slidesToShow: 1,\r\n      arrows: true,\r\n      infinite: false,\r\n    });\r\n  });\r\n\r\n$(document).ready(function(){\r\n    $('.product__viewed-slider').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      arrows: true,\r\n      infinite: !1\r\n    });\r\n  });\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
+eval("$(document).ready(function(){\r\n    $('.product__wrap-slider').slick({\r\n      vertical: true,\r\n      verticalSwiping: true,\r\n      slidesToShow: 3,\r\n      arrows: true,\r\n      responsive: [\r\n        {\r\n          breakpoint: 1025,\r\n          settings: {\r\n            slidesToShow: 1,\r\n            vertical: false,\r\n            verticalSwiping: false,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n      ]\r\n    });\r\n\r\n    \r\n\r\n    $('.product__previews-slider').slick({\r\n      slidesToShow: 1,\r\n      arrows: true,\r\n      infinite: false,\r\n    })\r\n\r\n    $('a[data-toggle=\"tab\"]').on('shown.bs.tab', function (e) {\r\n      $('.product__previews-slider').slick('setPosition');\r\n    });\r\n\r\n    $('.product__viewed-slider').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      arrows: true,\r\n      infinite: true,\r\n      responsive: [\r\n        {\r\n          breakpoint: 1025,\r\n          settings: {\r\n            slidesToShow: 2,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n        {\r\n          breakpoint: 1706,\r\n          settings: {\r\n            slidesToShow: 3,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n      ]\r\n    });\r\n    \r\n    $(\".product__slider-items img\").on(\"click\", function () {\r\n      var newSrc = $(this).attr(\"src\");\r\n      $(\"#product-img\").attr(\"src\", newSrc);\r\n    });\r\n    \r\n});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
 
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************!*\
-  !*** multi ./src/assets/js/app.js ./src/assets/js/file2.js ./src/assets/js/slider.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/counter.js ./src/assets/js/slider.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\file2.js */\"./src/assets/js/file2.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\slider.js */\"./src/assets/js/slider.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/file2.js_./src/assets/js/slider.js?");
+eval("__webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\counter.js */\"./src/assets/js/counter.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\slider.js */\"./src/assets/js/slider.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/counter.js_./src/assets/js/slider.js?");
 
 /***/ })
 
