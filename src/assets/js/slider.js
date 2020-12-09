@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.product__previews-slider').slick({
-      centerMode: true,
+      // centerMode: true,
       slidesToShow: 1,
       arrows: true,
       infinite: false,

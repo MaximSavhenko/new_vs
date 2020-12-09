@@ -115,7 +115,7 @@ eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack:///./src/assets/js/fil
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(document).ready(function(){\r\n    $('.product__wrap-slider').slick({\r\n      vertical: true,\r\n      verticalSwiping: true,\r\n      slidesToShow: 3,\r\n      arrows: true\r\n    });\r\n  });\r\n\r\n$(document).ready(function(){\r\n    $('.product__previews-slider').slick({\r\n      centerMode: true,\r\n      slidesToShow: 1,\r\n      arrows: true,\r\n      infinite: false,\r\n    });\r\n  });\r\n\r\n$(document).ready(function(){\r\n    $('.product__viewed-slider').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      arrows: true,\r\n      infinite: !1\r\n    });\r\n  });\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
+eval("$(document).ready(function(){\r\n    $('.product__wrap-slider').slick({\r\n      vertical: true,\r\n      verticalSwiping: true,\r\n      slidesToShow: 3,\r\n      arrows: true\r\n    });\r\n  });\r\n\r\n$(document).ready(function(){\r\n    $('.product__previews-slider').slick({\r\n      // centerMode: true,\r\n      slidesToShow: 1,\r\n      arrows: true,\r\n      infinite: false,\r\n    });\r\n  });\r\n\r\n$(document).ready(function(){\r\n    $('.product__viewed-slider').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      arrows: true,\r\n      infinite: !1\r\n    });\r\n  });\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
 
 /***/ }),
 
