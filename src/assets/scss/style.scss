@@ -179,7 +179,7 @@ h2 {
 .btn {
   display: table;
   border: none;
-  // width: 100%;
+  width: 100%;
   height: 48px;
   font-size: 16px;
   text-transform: uppercase;
@@ -188,7 +188,6 @@ h2 {
   border: 1px solid #9E3D5F;
   border-radius: 4px;
   text-align: center;
-  padding: 0 75px;
   color: #ffff;
   cursor: pointer;
   @include trs;
@@ -350,5 +349,6 @@ textarea {
 @import "block/topMenu.scss";
 @import "block/footer.scss";
 @import "block/product.scss";
+@import "block/breadcrumb.scss";
 @import "block/productTabs.scss";
 @import "block/tabs.scss";

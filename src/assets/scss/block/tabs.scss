@@ -1,35 +1,48 @@
 .nav {
     border-bottom: 1px solid #E4E4E4;
+    
 }
 .nav-tabs {
     display: flex;
     justify-content: center;
+    @include b(mobile) {
+        display: none;
+    }
 }
 .nav-item {
     margin-bottom: -2px;
-
 }
 .nav-link {
     font-size: 32px;
     color: #303030;
     padding: 15px 40px;
     &.active {
-        border-bottom: 2px solid #000;
+        border-bottom: 1px solid #000;
     }
 
 }
 .active {
     border-color: #000;
-
 }
+
+.tab-content > .tab-pane {
+    @include b(mobile) {
+        display: block !important;
+        opacity: 1;
+    }
+}
+
 .tab-content {
     padding-top: 82px;
+    @include b(mobile) {
+        padding-top: 0;
+    }
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     border-color: #000;
     border-top: none;
-    border-left: none;
+    border-left: none;      
     border-right: none;
 }
 
@@ -37,5 +50,17 @@
     border: none;
     border-bottom: 1px solid transparent;
 }
+
+.card {
+    border: none;
+}
+
+
+@media(min-width:768px) {
+    .card .collapse{
+        display:block;
+    }
+}
+
 
 

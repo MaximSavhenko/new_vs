@@ -3,6 +3,39 @@
     margin-bottom: 120px;
   }
 
+  &__responsive-title{
+    display: none;
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #303030;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid #E4E4E4;
+    a {
+      &:hover {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    &:after {
+      content:'';
+      display: block;
+      position: absolute;
+      top: 40%;
+      right: 0;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      width: 10px;
+      height: 10px;
+      transform: rotate(-45deg);
+    }             
+    @include b(mobile) {
+      display: block;
+    }
+  }
+
   &__tabs-wrapp {
   }
 
@@ -52,6 +85,30 @@
 
   &__previews-slider {
     margin-bottom: 24px;
+    .slick-dots {
+      padding-top: 12px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        font-size: 0;
+        width: 6px;
+        height: 6px;
+        background-color: #6F6F6F;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .slick-active {
+        background: #303030;
+        width: 8px;
+        height: 8px;
+      }
+  }
+    @include b(mobile) {
+      width: calc(100% +30px);
+      margin: 0 -15px;
+    }
     .slick-track {
       display: flex;
     }
@@ -93,8 +150,8 @@
   &__previews-slider-item {
     text-align: center;
     img {
-      width: auto;
-      height: auto;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: cover;
     }
   }
@@ -210,6 +267,10 @@
     font-size: 30px;
     line-height: 37px;
     color: #303030;
+  }
+
+  &__previews-recall-submit{
+    max-width: 293px;
   }
 
   &__previews-recall-next{

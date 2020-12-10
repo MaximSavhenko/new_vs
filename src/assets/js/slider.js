@@ -24,6 +24,16 @@ $(document).ready(function(){
       slidesToShow: 1,
       arrows: true,
       infinite: false,
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,               
+            arrows: false,
+            dots: true
+          }
+        },
+      ]
     })
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
