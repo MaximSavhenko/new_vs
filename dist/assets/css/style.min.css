@@ -1498,7 +1498,6 @@ textarea {
       height: 8px; }
   @media (max-width: 767px) {
     .product__previews-slider {
-      width: calc(100% +30px);
       margin: 0 -15px; } }
   .product__previews-slider .slick-track {
     display: flex; }

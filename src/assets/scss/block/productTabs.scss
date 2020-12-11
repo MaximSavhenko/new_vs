@@ -106,7 +106,7 @@
       }
   }
     @include b(mobile) {
-      width: calc(100% +30px);
+      // width: calc(100% + 30px);
       margin: 0 -15px;
     }
     .slick-track {
