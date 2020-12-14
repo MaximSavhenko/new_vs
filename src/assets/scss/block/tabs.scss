@@ -1,12 +1,11 @@
 .nav {
     border-bottom: 1px solid #E4E4E4;
-    
 }
 .nav-tabs {
     display: flex;
     justify-content: center;
-    @include b(mobile) {
-        display: none;
+    @include b(1024) {
+        flex-wrap: nowrap;
     }
 }
 .nav-item {
@@ -16,26 +15,31 @@
     font-size: 32px;
     color: #303030;
     padding: 15px 40px;
+    font-weight: 500;
+    @include b(1024) {
+        font-size: 20px;
+    }
+    @include b(550) {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px 10px;
+    }
+    @include b(350) {
+        font-size: 14px;
+    }
     &.active {
         border-bottom: 1px solid #000;
+        color: #303030;
     }
-
 }
 .active {
     border-color: #000;
 }
 
-.tab-content > .tab-pane {
-    @include b(mobile) {
-        display: block !important;
-        opacity: 1;
-    }
-}
-
 .tab-content {
     padding-top: 82px;
     @include b(mobile) {
-        padding-top: 0;
+        padding-top: 56px;
     }
 }
 
@@ -54,13 +58,5 @@
 .card {
     border: none;
 }
-
-
-@media(min-width:768px) {
-    .card .collapse{
-        display:block;
-    }
-}
-
 
 

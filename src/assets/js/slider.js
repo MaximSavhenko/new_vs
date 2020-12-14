@@ -40,6 +40,10 @@ $(document).ready(function(){
       $('.product__previews-slider').slick('setPosition');
     });
 
+    $('#previews').on('shown.bs.collapse', function (e) {
+      $('.product__previews-slider').slick('setPosition');
+    });
+
     $('.product__viewed-slider').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -47,7 +51,15 @@ $(document).ready(function(){
       infinite: true,
       responsive: [
         {
-          breakpoint: 1025,
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 1200,
           settings: {
             slidesToShow: 2,
             arrows: false,
@@ -64,6 +76,8 @@ $(document).ready(function(){
         },
       ]
     });
+
+    
     
     $(".product__slider-items img").on("click", function () {
       var newSrc = $(this).attr("src");
