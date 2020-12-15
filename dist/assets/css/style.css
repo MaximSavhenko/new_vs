@@ -713,6 +713,7 @@ textarea:focus {
 .header__profile {
     position: absolute;
     right: 17px;
+    z-index: 210;
     display: -ms-flexbox;
     display: flex;
 }
@@ -1142,6 +1143,11 @@ textarea:focus {
     top: 16px;
 }
 
+.topMenu__hiddenMenu-sub-item.removeArrow:after {
+    content: '';
+    display: none;
+}
+
 .topMenu__hiddenMenu-sub-item--noarrow {
     cursor: pointer;
     margin-bottom: 12px;
@@ -1156,8 +1162,8 @@ textarea:focus {
 }
 
 .topMenu__hiddenMenu-sub-item--noarrow img {
-    min-width: 40px;
-    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     margin-right: 10px;
 }
 
@@ -1772,6 +1778,17 @@ textarea:focus {
         max-width: 21px;
         max-height: 12px;
     }
+}
+
+.footer__scroll-wrap a {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .footer__copyright-responsive {

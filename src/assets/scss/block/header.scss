@@ -212,6 +212,7 @@
   &__profile{
     position: absolute;
     right: 17px;
+    z-index: 210;
     display: flex;
     @include b(mobile) {
       right: 0;

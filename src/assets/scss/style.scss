@@ -176,7 +176,7 @@ h2 {
   min-height: 100vh;
 }
 
-.btn {
+.button {
   display: table;
   border: none;
   width: 100%;
@@ -196,6 +196,7 @@ h2 {
     background-color: #fff;
     color: #9E3D5F;
   }
+
 
   &--turquoise {
     background-color: #5294AB;
@@ -344,6 +345,8 @@ textarea {
     top: 7px;
   }
 }
+
+
 
 @import "block/header.scss";
 @import "block/topMenu.scss";

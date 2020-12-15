@@ -307,6 +307,14 @@
       top: 16px;
     }
 
+    &.removeArrow {
+      &:after {
+        content:'';
+        display: none;
+      }
+    }
+
+
     &--noarrow {
       cursor: pointer;
       margin-bottom: 12px;
@@ -317,8 +325,8 @@
       display: flex;
       align-items: center;
       img {
-        min-width: 40px;
-        min-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
         margin-right: 10px;
       }
       &:first-child {

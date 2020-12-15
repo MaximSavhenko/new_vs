@@ -1,1 +1,133 @@
-!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){n(1),n(2),t.exports=n(3)},function(t,e){function n(t,e){var n;if("undefined"==typeof Symbol||null==t[Symbol.iterator]){if(Array.isArray(t)||(n=function(t,e){if(!t)return;if("string"==typeof t)return r(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);"Object"===n&&t.constructor&&(n=t.constructor.name);if("Map"===n||"Set"===n)return Array.from(t);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return r(t,e)}(t))||e&&t&&"number"==typeof t.length){n&&(t=n);var o=0,i=function(){};return{s:i,n:function(){return o>=t.length?{done:!0}:{done:!1,value:t[o++]}},e:function(t){throw t},f:i}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var a,s=!0,u=!1;return{s:function(){n=t[Symbol.iterator]()},n:function(){var t=n.next();return s=t.done,t},e:function(t){u=!0,a=t},f:function(){try{s||null==n.return||n.return()}finally{if(u)throw a}}}}function r(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,r=new Array(e);n<e;n++)r[n]=t[n];return r}var o,i;(o=document.querySelector(".header__btn-menu")).onclick=function(){document.body.classList.toggle("overflow"),o.classList.toggle("animationClose")},(i=document.getElementById("openSettingLang")).onclick=function(){i.classList.toggle("transformArrow")},function(){var t=document.querySelectorAll(".topMenu__hiddenMenu-item");arrowSub=document.querySelectorAll(".topMenu__hiddenMenu-sub-item");var e,r=n(t);try{var o=function(){var t=e.value;t.onclick=function(){t.classList.toggle("activeArrow")}};for(r.s();!(e=r.n()).done;)o()}catch(t){r.e(t)}finally{r.f()}var i,a=n(arrowSub);try{var s=function(){var t=i.value;t.onclick=function(){t.classList.toggle("activeArrowSub")}};for(a.s();!(i=a.n()).done;)s()}catch(t){a.e(t)}finally{a.f()}}()},function(t,e){$(document).ready((function(){$(".product__info-quantity-min").click((function(){var t=$(this).parent().find(".product__info-quantity-input"),e=parseInt(t.val())-1;return e=e<1?1:e,t.val(e),t.change(),!1})),$(".product__info-quantity-max").click((function(){var t=$(this).parent().find(".product__info-quantity-input");return t.val(parseInt(t.val())+1),t.change(),!1}))}))},function(t,e){$(document).ready((function(){$(".product__wrap-slider").slick({vertical:!0,verticalSwiping:!0,slidesToShow:3,arrows:!0,responsive:[{breakpoint:1025,settings:{slidesToShow:1,vertical:!1,verticalSwiping:!1,arrows:!1,dots:!0}}]}),$(".product__previews-slider").slick({slidesToShow:1,arrows:!0,infinite:!1,responsive:[{breakpoint:1025,settings:{slidesToShow:1,arrows:!1,dots:!0}}]}),$('a[data-toggle="tab"]').on("shown.bs.tab",(function(t){$(".product__previews-slider").slick("setPosition")})),$("#previews").on("shown.bs.collapse",(function(t){$(".product__previews-slider").slick("setPosition")})),$(".product__viewed-slider").slick({slidesToShow:4,slidesToScroll:1,arrows:!0,infinite:!0,responsive:[{breakpoint:600,settings:{slidesToShow:1,arrows:!1,dots:!0}},{breakpoint:1200,settings:{slidesToShow:2,arrows:!1,dots:!0}},{breakpoint:1706,settings:{slidesToShow:3,arrows:!1,dots:!0}}]}),$(".product__slider-items img").on("click",(function(){var t=$(this).attr("src");$("#product-img").attr("src",t)}))}))}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function toggleMobileMenu() {\r\n  var btnMenu = document.querySelector(\".header__btn-menu\");\r\n\r\n  btnMenu.onclick = function () {\r\n    document.body.classList.toggle(\"overflow\");\r\n    btnMenu.classList.toggle(\"animationClose\");\r\n  };\r\n}\r\n\r\ntoggleMobileMenu();\r\n\r\nfunction openSubLang() {\r\n  var spanBtn = document.getElementById(\"openSettingLang\");\r\n\r\n  spanBtn.onclick = function () {\r\n    spanBtn.classList.toggle(\"transformArrow\");\r\n  };\r\n}\r\n\r\nopenSubLang();\r\n\r\nfunction openArrow() {\r\n  let arrow = document.querySelectorAll(\".topMenu__hiddenMenu-item\");\r\n  arrowSub = document.querySelectorAll(\".topMenu__hiddenMenu-sub-item\");\r\n\r\n  for (let elem of arrow) {\r\n    elem.onclick = function () {\r\n      elem.classList.toggle(\"activeArrow\");\r\n    };\r\n  }\r\n  for (let elem of arrowSub) {\r\n    elem.onclick = function () {\r\n      elem.classList.toggle(\"activeArrowSub\");\r\n    };\r\n  }\r\n}\r\n\r\nopenArrow();\r\n\r\nfunction scrollUp() {\r\n  function scrollTo(element) {\r\n    window.scroll({\r\n      left: 0,\r\n      top: element.offsetTop,\r\n      behavior: \"smooth\",\r\n    });\r\n  }\r\n\r\n  var button = document.querySelector(\".footer__scrollUp\");\r\n  var header = document.querySelector(\"#up\");\r\n\r\n  button.addEventListener(\"click\", () => {\r\n    scrollTo(header);\r\n  });\r\n}\r\n\r\nscrollUp();\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/counter.js":
+/*!**********************************!*\
+  !*** ./src/assets/js/counter.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("$(document).ready(function() {\r\n    $('.product__info-quantity-min').click(function () {\r\n        var $input = $(this).parent().find('.product__info-quantity-input');\r\n        var count = parseInt($input.val()) - 1;\r\n        count = count < 1 ? 1 : count;\r\n        $input.val(count);\r\n        $input.change();\r\n        return false;\r\n    });\r\n    $('.product__info-quantity-max').click(function () {\r\n        var $input = $(this).parent().find('.product__info-quantity-input');\r\n        $input.val(parseInt($input.val()) + 1);\r\n        $input.change();\r\n        return false;\r\n    });\r\n\r\n});\n\n//# sourceURL=webpack:///./src/assets/js/counter.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/slider.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/slider.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("$(document).ready(function(){\r\n    $('.product__wrap-slider').slick({\r\n      vertical: true,\r\n      verticalSwiping: true,\r\n      slidesToShow: 3,\r\n      arrows: true,\r\n      responsive: [\r\n        {\r\n          breakpoint: 1025,\r\n          settings: {\r\n            slidesToShow: 1,\r\n            vertical: false,\r\n            verticalSwiping: false,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n      ]\r\n    });\r\n\r\n    \r\n\r\n    $('.product__previews-slider').slick({\r\n      slidesToShow: 1,\r\n      arrows: true,\r\n      infinite: false,\r\n      responsive: [\r\n        {\r\n          breakpoint: 1025,\r\n          settings: {\r\n            slidesToShow: 1,               \r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n      ]\r\n    })\r\n\r\n    $('a[data-toggle=\"tab\"]').on('shown.bs.tab', function (e) {\r\n      $('.product__previews-slider').slick('setPosition');\r\n    });\r\n\r\n    $('#previews').on('shown.bs.collapse', function (e) {\r\n      $('.product__previews-slider').slick('setPosition');\r\n    });\r\n\r\n    $('.product__viewed-slider').slick({\r\n      slidesToShow: 4,\r\n      slidesToScroll: 1,\r\n      arrows: true,\r\n      infinite: true,\r\n      responsive: [\r\n        {\r\n          breakpoint: 600,\r\n          settings: {\r\n            slidesToShow: 1,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n        {\r\n          breakpoint: 1200,\r\n          settings: {\r\n            slidesToShow: 2,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n        {\r\n          breakpoint: 1706,\r\n          settings: {\r\n            slidesToShow: 3,\r\n            arrows: false,\r\n            dots: true\r\n          }\r\n        },\r\n      ]\r\n    });\r\n\r\n    \r\n    \r\n    $(\".product__slider-items img\").on(\"click\", function () {\r\n      var newSrc = $(this).attr(\"src\");\r\n      $(\"#product-img\").attr(\"src\", newSrc);\r\n    });\r\n    \r\n});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/slider.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*****************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/counter.js ./src/assets/js/slider.js ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\counter.js */\"./src/assets/js/counter.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Max\\Desktop\\WORK\\volshebnayaStrana_gulp\\src\\assets\\js\\slider.js */\"./src/assets/js/slider.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/counter.js_./src/assets/js/slider.js?");
+
+/***/ })
+
+/******/ });
