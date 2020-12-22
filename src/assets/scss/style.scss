@@ -123,10 +123,10 @@ button {
   cursor: pointer;
 }
 
-button, 
-button:active, 
+button,
+button:active,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 ul,
@@ -177,36 +177,55 @@ h2 {
 }
 
 .button {
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 100%;
   height: 48px;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif, Arial;
-  background-color: #9E3D5F;
-  border: 1px solid #9E3D5F;
+  font-family: "Cera Pro", sans-serif, Arial;
+  background-color: #9e3d5f;
+  border: 1px solid #9e3d5f;
   border-radius: 4px;
-  text-align: center;
   color: #ffff;
   cursor: pointer;
   @include trs;
 
   &:hover {
     background-color: #fff;
-    color: #9E3D5F;
+    color: #9e3d5f;
   }
 
-
   &--turquoise {
-    background-color: #5294AB;
-    border: 1px solid #5294AB;
+    background-color: #5294ab;
+    border: 1px solid #5294ab;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     &:hover {
-      color: #5294AB;
+      color: #5294ab;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #9e3d5f;
+    &:hover {
+      background-color: #9e3d5f;
+      color: #fff;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      background-color: #9e3d5f;
+      color: #fff;
     }
   }
 }
@@ -290,10 +309,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
-input[type='number'] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 textarea {
@@ -345,9 +364,7 @@ textarea {
     top: 7px;
   }
 }
-
-
-
+@import "block/slider.scss";
 @import "block/header.scss";
 @import "block/topMenu.scss";
 @import "block/footer.scss";
@@ -355,3 +372,4 @@ textarea {
 @import "block/breadcrumb.scss";
 @import "block/productTabs.scss";
 @import "block/tabs.scss";
+@import "block/home.scss";

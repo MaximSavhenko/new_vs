@@ -309,11 +309,10 @@
 
     &.removeArrow {
       &:after {
-        content:'';
+        content: "";
         display: none;
       }
     }
-
 
     &--noarrow {
       cursor: pointer;
@@ -384,7 +383,6 @@
       font-size: 18px;
       line-height: 22px;
     }
-    
   }
 
   &__hiddenMenu-card-img {
@@ -412,9 +410,7 @@
   &__hiddenMenu-card-property {
     display: flex;
     justify-content: space-between;
-    
   }
-  
 
   &__hiddenMenu-card-article {
     display: flex;

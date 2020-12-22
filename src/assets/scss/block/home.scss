@@ -1,0 +1,188 @@
+.home {
+  &__bigslider-wrapp {
+    padding-top: 143px; 
+  }
+
+  &__bigslider-item {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__welcome {
+    margin-bottom: 120px;
+  }
+
+  &__welcome-caption {
+    font-size: 18px;
+    color: #303030;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  &__welcome-descr {
+    font-size: 18px;
+  }
+
+  &__items {
+    &--pt {
+      padding-top: 120px;
+    }
+  }
+
+  &__viewed {
+    display: flex;
+    margin: 0 -15px;
+
+    &--pt {
+      padding-top: 120px;
+    }
+  }
+
+  &__viewd-wrapp {
+    margin: 0 -10px;
+  }
+
+  &__viewd-caption {
+    font-size: 24px;
+    color: #303030;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__viewd-btn {
+    max-width: 291px;
+    margin: 32px auto 0;
+
+    &--otherWidth {
+      max-width: 228px;
+      margin: 0;
+    }
+  }
+
+  &__viewd-card {
+    padding: 0 10px;
+  }
+
+  &__viewd-image {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__viewd-link {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    padding-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  &__viewd-shareTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 371px;
+    border-radius: 4px;
+    background: rgba(33, 150, 243, 0.1);
+    border: 1px solid #1790ff;
+    padding: 8px;
+  }
+
+  &__viewd-time {
+    span {
+      color: #303030;
+    }
+
+    time {
+      color: #303030;
+    }
+  }
+
+  &__viewd-time-title {
+  }
+
+  &__viewd-timeLink {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: #2196f3;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #2196f3;
+  }
+
+  &__instashop-slider {
+    
+  }
+
+  &__instashop-slider-item {
+    margin: -7px;
+  }
+
+  &__instashop-slider-card {
+    display: inline-block;
+    position: relative;
+    margin: 7px;
+  }
+
+  &__instashop-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 292px;
+    width: 292px;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      background-color: rgba(#000, 0.7);
+      opacity: 1;
+    }
+  }
+
+  &__instashop-hover-icon {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__instashop-hover-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #fff;
+    padding-top: 15px;
+    display: block;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__instashop-slider-link {
+    display: inline-block;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__comments-slider {
+    position: relative;
+  }
+}

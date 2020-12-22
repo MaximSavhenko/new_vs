@@ -1,14 +1,43 @@
 .breadcrumb {
-    background-color: #fff;
+  background-color: #fff;
+  @include b(mobile) {
+    padding-left: 0;
+  }
+}
+
+.breadcrumb-item {
+  &:before {
+    font-size: 12px;
+  }
+  a {
+    color: #6f6f6f;
+    text-transform: uppercase;
+    font-size: 12px;
   }
 
-  .breadcrumb-item {
-    &:before {
-      font-size: 12px;
-    }
-    a {
-      color: #6f6f6f;
-      text-transform: uppercase;
-      font-size: 12px;
+  @include b(mobile) {
+    &:not(:nth-last-child(-n + 2)) {
+      display: none;
+      padding-left: 0;
     }
   }
+}
+
+.active {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.breadcrumb-item.active {
+  color: #000;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  @include b(mobile) {
+    &:not(:nth-last-child(-n + 1)) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
