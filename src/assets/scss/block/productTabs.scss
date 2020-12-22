@@ -228,6 +228,8 @@
     &--slider {
         background-color: #fff;
         border: none;
+        font-weight: 300;
+        padding: 40px 0;
     }
   }
 
@@ -407,6 +409,16 @@
     display: flex;
     justify-content: center;
     padding: 0 15px;
+
+    &--width {
+      width: 25%;
+      @include b(mobile) {
+        width: 50%;
+      }
+      @include b(500) {
+        width: 100%;
+      }
+    }
   }
     
 }

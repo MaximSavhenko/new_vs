@@ -121,17 +121,20 @@
   }
 
   &__instashop-slider {
-    
+    padding-bottom: 120px;
   }
 
   &__instashop-slider-item {
-    margin: -7px;
+    margin: -12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   &__instashop-slider-card {
     display: inline-block;
     position: relative;
-    margin: 7px;
+    margin: 12px;
   }
 
   &__instashop-hover {
@@ -182,7 +185,128 @@
     }
   }
 
+  &__comments{
+    margin-bottom: 175px;
+  }
+
+  &__comments-wrapp{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__comments-caption{
+    font-size: 24px;
+    line-height: 30px;
+    color: #303030;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    display: flex;
+  }
+
   &__comments-slider {
     position: relative;
+    max-width: 1180px;
   }
+
+  &__blog {
+    margin-bottom: 120px;
+  }
+
+  &__blog-caption {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__blog-slider {
+  }
+
+  &__blog-slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__blog-slider-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__blog-slider-caption {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #000;
+  }
+
+  &__blog-slider-name {
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-bottom: 12px;
+    color: #000;
+  }
+
+  &__blog-slider-descr {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+  &__blog-slider-btn{
+    max-width: 245px;
+  }
+
+  &__information {
+    margin-bottom: 120px;
+  }
+
+  &__information-wrap {
+  }
+
+  &__information-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+    &:before {
+      content:'';
+      display: block;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      width: 25px;
+      height: 25px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      transition: all .2s linear;
+    }
+    &.active {
+      &:before {
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  &__information-descr {
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__information-caption {
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-bottom: 30px;
+    display: block;
+  }
+
 }

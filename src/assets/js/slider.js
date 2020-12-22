@@ -42,6 +42,19 @@ $(document).ready(function () {
     ],
   });
 
+  $(".home__blog-slider").slick({
+    slidesToShow: 4,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".product__wrap-slider").slick({
     vertical: true,
     verticalSwiping: true,
