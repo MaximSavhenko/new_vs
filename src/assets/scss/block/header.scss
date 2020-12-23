@@ -137,7 +137,7 @@
   }
   &__setting {
     height: 100%;
-    padding: 34px 15px 10px 14px;
+    padding: 34px 15px 0 14px;
     border: 1px solid rgba(255, 255, 255, 0);
     @include b(1700) {
       display: none;
@@ -177,7 +177,7 @@
     display: flex;
     position: relative;
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
     a {
       color: #303030;
@@ -189,9 +189,6 @@
     @include b(tablet) {
       z-index: 20;
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
 
     a {
       font-size: 14px;
@@ -201,6 +198,16 @@
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+
+    &.active {
+      order: -1;
+      &:not(:first-child) {
+        display: flex;
+      }
+      &:last-child {
+        margin-bottom: 10px;
+      }
     }
   }
 

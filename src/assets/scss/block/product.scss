@@ -53,8 +53,8 @@
     position: relative;
     padding: 80px 0;
     @include b(mobile) {
-      width: calc(100% + 30px);
-      margin: 0 -15px;
+      width: calc(100% + 90px);
+      margin: 0 -45px;
       padding: 0;
       display: flex;
       justify-content: center;
@@ -64,6 +64,8 @@
     }
     @include b(500) {
       height: 600px;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
     }
     @include b(600) {
       max-height: 100%;

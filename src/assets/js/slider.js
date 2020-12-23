@@ -34,9 +34,9 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 1,
+          arrows: false
         },
       },
     ],
@@ -47,9 +47,19 @@ $(document).ready(function () {
     arrows: true,
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 501,
         settings: {
           slidesToShow: 1,
+          dots: true,
+          arrows: false,
         },
       },
     ],

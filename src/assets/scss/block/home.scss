@@ -1,6 +1,17 @@
 .home {
+  padding-top: 143px;
+  margin-bottom: 190px;
+  @include b(mobile) {
+    padding-top: 7px;
+  }
+
+  &__bigslider{
+    margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 65px;
+    }
+  }
   &__bigslider-wrapp {
-    padding-top: 143px; 
   }
 
   &__bigslider-item {
@@ -13,32 +24,34 @@
 
   &__welcome {
     margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
   }
 
   &__welcome-caption {
     font-size: 18px;
     color: #303030;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 30px;
   }
 
   &__welcome-descr {
     font-size: 18px;
+    font-weight: 300;
+    color: #303030;
   }
 
   &__items {
-    &--pt {
-      padding-top: 120px;
-    }
+      margin-bottom: 120px;
+      @include b(mobile) {
+        margin-bottom: 64px;
+      }
   }
 
   &__viewed {
     display: flex;
     margin: 0 -15px;
-
-    &--pt {
-      padding-top: 120px;
-    }
   }
 
   &__viewd-wrapp {
@@ -121,20 +134,47 @@
   }
 
   &__instashop-slider {
-    padding-bottom: 120px;
+    margin-right: -24px;
+    margin-bottom: -24px;
+    @include b(500) {
+      margin-right: -16px;
+      margin-bottom: -16px;
+    }
   }
 
   &__instashop-slider-item {
-    margin: -12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   &__instashop-slider-card {
-    display: inline-block;
+    display: flex;
     position: relative;
-    margin: 12px;
+    padding-right: 24px;
+    margin-bottom: 24px;
+    width: 20%;
+    @include b(mobile) {
+      width: 33.33%;
+      &:nth-child(4),&:nth-child(5),&:nth-child(9),&:nth-child(10) {
+        display: none;
+      }
+    }
+
+    @include b(500) {
+      width: 50%;
+      padding-right: 16px;
+      margin-bottom: 16px;
+      &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+        display: none;
+      }
+      &:nth-child(6) {
+        display: flex;
+      }
+      &:nth-child(9) {
+        display: flex;
+      }
+    }
   }
 
   &__instashop-hover {
@@ -146,14 +186,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 292px;
-    width: 292px;
+    height: 100%;
+    width: calc(100% - 24px);
     flex-direction: column;
     opacity: 0;
     transition: all 0.1s ease-in-out;
     &:hover {
       background-color: rgba(#000, 0.7);
       opacity: 1;
+    }
+    @include b(500) {
+      width: calc(100% - 16px);
     }
   }
 
@@ -172,26 +215,42 @@
     &:hover {
       color: #fff;
     }
+    @include b(mobile) {
+      font-size: 12px;
+    }
+  }
+
+  &__instashop-hover-btn{
+    max-width: 228px;
+    @include b(mobile) {
+      display: none;
+    }
   }
 
   &__instashop-slider-link {
     display: inline-block;
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        display: flex;
+      }
   }
+
+  
 
   &__comments{
     margin-bottom: 175px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
   }
 
   &__comments-wrapp{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   &__comments-caption{
@@ -199,13 +258,11 @@
     line-height: 30px;
     color: #303030;
     text-transform: uppercase;
-    justify-content: flex-start;
-    display: flex;
   }
 
   &__comments-slider {
     position: relative;
-    max-width: 1180px;
+    width: 100%;
   }
 
   &__blog {
@@ -220,6 +277,10 @@
   }
 
   &__blog-slider {
+    @include b(500) {
+      width: calc(100% + 30px);
+      margin: 0 -30px;
+    }
   }
 
   &__blog-slider-item {
