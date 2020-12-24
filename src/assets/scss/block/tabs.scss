@@ -16,13 +16,18 @@
     color: #303030;
     padding: 15px 40px;
     font-weight: 500;
+    padding: 17px 15px;
+    margin-right: 50px;
     @include b(1024) {
-        font-size: 20px;
+        font-size: 24px;
+        margin-right: 25px;
     }
     @include b(550) {
         font-size: 16px;
         text-align: center;
         padding: 10px 10px;
+        margin-right: 0;
+        height: 100%;
     }
     @include b(350) {
         font-size: 14px;
@@ -39,7 +44,8 @@
 .tab-content {
     padding-top: 82px;
     @include b(mobile) {
-        padding-top: 56px;
+        padding-top: 66px;
+
     }
 }
 
@@ -52,11 +58,16 @@
 
 .nav-tabs .nav-link {
     border: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .card {
     border: none;
+
+    &.active {
+        text-transform: none;
+        font-size: inherit;
+    }
 }
 
 

@@ -1,6 +1,9 @@
 .product {
   &__tabs {
     margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 45px;
+    }
   }
 
   &__accordion{
@@ -22,6 +25,7 @@
     padding-bottom: 16px;
     padding-top: 16px;
     border-bottom: 1px solid #E4E4E4;
+    transition: all .2s;
     a {
       &:hover {
         color: #000;
@@ -42,6 +46,12 @@
     }             
     @include b(mobile) {
       display: block;
+    }
+    &.activeArrow {
+      &:after {
+        border-left: none;
+        transform: rotate(0deg);
+      }
     }
   }
 
@@ -157,7 +167,13 @@
     }
     @include b(mobile) {
       margin: 0 -15px;
+      margin-bottom: 16px;
     }
+
+    @include b(500) {
+      margin-bottom: 24px; 
+    }
+
     .slick-track {
       display: flex;
     }
@@ -325,7 +341,7 @@
 
   &__previews-recall-btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 46px;
     
@@ -354,7 +370,7 @@
 
   &__previews-recall-nextBtn{
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 22px;
     border-bottom: 1px solid #000;
   }
@@ -383,6 +399,7 @@
 
   &__viewed-slider {
     position: relative;
+    margin: 0 -12px;
     .slick-dots {
       width: 100%;
       display: flex;
@@ -409,7 +426,7 @@
   &__viewed-slider-item {
     display: flex;
     justify-content: center;
-    padding: 0 15px;
+    padding: 0 12px;
 
     &--width {
       width: 25%;

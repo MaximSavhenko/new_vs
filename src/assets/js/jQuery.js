@@ -8,5 +8,11 @@ $(document).ready(function () {
     $(this).addClass("arrow");
   });
 
+
+  $(".product__responsive-title").click(function () {
+    $(".product__responsive-title").not(this).removeClass('activeArrow');
+    $(this).toggleClass("activeArrow");
+  });
+
   
 });
