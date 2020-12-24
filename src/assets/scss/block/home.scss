@@ -3,9 +3,14 @@
   margin-bottom: 190px;
   @include b(mobile) {
     padding-top: 7px;
+    margin-bottom: 138px;
   }
 
-  &__bigslider{
+  @include b(500) {
+    margin-bottom: 62px;
+  }
+
+  &__bigslider {
     margin-bottom: 120px;
     @include b(mobile) {
       margin-bottom: 65px;
@@ -42,30 +47,39 @@
     color: #303030;
   }
 
-  &__items {
-      margin-bottom: 120px;
-      @include b(mobile) {
-        margin-bottom: 64px;
-      }
+  &__new-items {
+    margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
   }
 
-  &__viewed {
+  &__new-items-wrap {
     display: flex;
     margin: 0 -15px;
   }
 
-  &__viewd-wrapp {
-    margin: 0 -10px;
+  &__discount{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    z-index: 100;
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5660;
+    color: #fff;
   }
 
-  &__viewd-caption {
-    font-size: 24px;
-    color: #303030;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+  &__favorites{
+    position: absolute;
+    right: 17px;
+    top: 19px;
   }
 
-  &__viewd-btn {
+  &__link-btn {
     max-width: 291px;
     margin: 32px auto 0;
 
@@ -75,19 +89,57 @@
     }
   }
 
-  &__viewd-card {
-    padding: 0 10px;
+  &__sale {
+    margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
   }
 
-  &__viewd-image {
+  &__sale-wrap {
+    display: flex;
+    margin: 0 -15px;
+  }
+
+  &__promo {
+    margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
+    
+  }
+
+  &__promo-slider{
+    margin: 0 -12px;
+    @include b(500) {
+      margin: 0 -15px;
+    }
+    .slick-slide {
+      padding: 0 12px;
+      @include b(500) {
+        padding: 0;
+      }
+    }
+  }
+
+  &__promo-card {
+    @include b(500) {
+      width: 100%;
+    }
+  }
+
+  &__promo-image {
     img {
       max-width: 100%;
       max-height: 100%;
       object-fit: cover;
+      display: flex;
     }
+
+    
   }
 
-  &__viewd-link {
+  &__promo-link {
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -96,21 +148,27 @@
     color: #000;
     padding-top: 16px;
     margin-bottom: 8px;
+    @include b(500) {
+      margin: 0 8px 15px;
+    }
   }
 
-  &__viewd-shareTime {
+  &__promo-shareTime {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 371px;
     border-radius: 4px;
     background: rgba(33, 150, 243, 0.1);
     border: 1px solid #1790ff;
     padding: 8px;
+
+    @include b(500) {
+      margin: 0 15px;
+    }
   }
 
-  &__viewd-time {
+  &__promo-time {
     span {
       color: #303030;
     }
@@ -120,10 +178,10 @@
     }
   }
 
-  &__viewd-time-title {
+  &__promo-time-title {
   }
 
-  &__viewd-timeLink {
+  &__promo-timeLink {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
@@ -133,9 +191,15 @@
     border-bottom: 1px dashed #2196f3;
   }
 
+  &__instashop{
+    margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
+  }
+
   &__instashop-slider {
     margin-right: -24px;
-    margin-bottom: -24px;
     @include b(500) {
       margin-right: -16px;
       margin-bottom: -16px;
@@ -146,6 +210,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: -24px;
   }
 
   &__instashop-slider-card {
@@ -156,7 +221,10 @@
     width: 20%;
     @include b(mobile) {
       width: 33.33%;
-      &:nth-child(4),&:nth-child(5),&:nth-child(9),&:nth-child(10) {
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(9),
+      &:nth-child(10) {
         display: none;
       }
     }
@@ -165,7 +233,9 @@
       width: 50%;
       padding-right: 16px;
       margin-bottom: 16px;
-      &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
         display: none;
       }
       &:nth-child(6) {
@@ -220,7 +290,7 @@
     }
   }
 
-  &__instashop-hover-btn{
+  &__instashop-hover-btn {
     max-width: 228px;
     @include b(mobile) {
       display: none;
@@ -229,31 +299,29 @@
 
   &__instashop-slider-link {
     display: inline-block;
-    
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-        display: flex;
-      }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      display: flex;
+    }
   }
 
-  
-
-  &__comments{
+  &__comments {
     margin-bottom: 175px;
     @include b(mobile) {
       margin-bottom: 64px;
     }
   }
 
-  &__comments-wrapp{
+  &__comments-wrapp {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  &__comments-caption{
+  &__comments-caption {
     font-size: 24px;
     line-height: 30px;
     color: #303030;
@@ -267,6 +335,12 @@
 
   &__blog {
     margin-bottom: 120px;
+    @include b(mobile) {
+      margin-bottom: 86px;
+    }
+    @include b(500) {
+      margin-bottom: 71px;
+    }
   }
 
   &__blog-caption {
@@ -277,9 +351,15 @@
   }
 
   &__blog-slider {
+    margin: 0 -12px;
     @include b(500) {
-      width: calc(100% + 30px);
-      margin: 0 -30px;
+      margin: 0 -15px;
+    }
+    .slick-slide {
+      padding: 0 12px;
+      @include b(500) {
+        padding: 0;
+      }
     }
   }
 
@@ -294,8 +374,11 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    display: block;
+    display: flex;
     margin-bottom: 16px;
+    @include b(500) {
+      width: calc(100% + 30px);
+    }
   }
 
   &__blog-slider-caption {
@@ -311,6 +394,9 @@
     line-height: 22px;
     margin-bottom: 12px;
     color: #000;
+    @include b(500) {
+      padding: 0 15px;
+    }
   }
 
   &__blog-slider-descr {
@@ -318,17 +404,26 @@
     line-height: 20px;
     font-weight: 300;
     margin-bottom: 25px;
+    @include b(500) {
+      padding: 0 15px;
+    }
   }
 
-  &__blog-slider-btn{
+  &__blog-slider-btn {
     max-width: 245px;
+    @include b(500) {
+      max-width: 94%;
+    }
   }
 
   &__information {
     margin-bottom: 120px;
-  }
-
-  &__information-wrap {
+    @include b(mobile) {
+      margin-bottom: 86px;
+    }
+    @include b(500) {
+      margin-bottom: 70px;
+    }
   }
 
   &__information-btn {
@@ -337,7 +432,7 @@
     margin-bottom: 30px;
     width: 100%;
     &:before {
-      content:'';
+      content: "";
       display: block;
       border-bottom: 1px solid #000;
       border-left: 1px solid #000;
@@ -345,7 +440,7 @@
       height: 25px;
       transform: rotate(-45deg);
       cursor: pointer;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
     }
     &.active {
       &:before {
@@ -369,5 +464,4 @@
     margin-bottom: 30px;
     display: block;
   }
-
 }

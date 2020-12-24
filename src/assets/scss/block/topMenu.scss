@@ -391,9 +391,19 @@
     padding: 7px;
     display: flex;
     justify-content: center;
+    position: relative;
+    
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+
+    &--close {
+      padding: 36px;
+      @include b(500) {
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+      }
     }
   }
 
@@ -410,6 +420,7 @@
   &__hiddenMenu-card-property {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__hiddenMenu-card-article {
@@ -423,8 +434,8 @@
     p {
       font-size: 14px;
       font-weight: 500;
-      display: inline;
-      text-align: end;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -434,6 +445,15 @@
     line-height: 35px;
     color: #5294ab;
     text-transform: uppercase;
+    @include b(1024) {
+      font-size: 22px;
+    }
+  }
+
+  &__hiddenMenu-sale{
+    font-size: 22px;
+    color: #303030;
+    text-decoration: line-through;
   }
 
   //settings ------------------------------------------------

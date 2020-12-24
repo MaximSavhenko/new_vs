@@ -413,6 +413,12 @@
 
     &--width {
       width: 25%;
+      @include b(1024) {
+        width: 33.333%;
+        &:nth-child(4) {
+          display: none;
+        }
+      }
       @include b(mobile) {
         width: 50%;
         &:nth-child(3), &:nth-child(4) {

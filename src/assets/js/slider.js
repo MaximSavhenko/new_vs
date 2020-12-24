@@ -65,6 +65,29 @@ $(document).ready(function () {
     ],
   });
 
+  $(".home__promo-slider").slick({
+    slidesToShow: 4,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
   $(".product__wrap-slider").slick({
     vertical: true,
     verticalSwiping: true,
