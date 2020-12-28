@@ -404,6 +404,16 @@
       }
     }
 
+    &--padding {
+      padding: 34px;
+      @include b(mobile) {
+        padding: 30px;
+      }
+      @include b(500) {
+        padding: 20px;
+      }
+    }
+
     &--close {
       padding: 36px;
       @include b(500) {

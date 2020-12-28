@@ -6,7 +6,7 @@
 
   &__images {
     display: flex;
-    @include b(1024) {
+    @include b(1280) {
       width: 50%;
       display: block;
     }
@@ -18,7 +18,7 @@
 
   &__slider-favorites {
     display: none;
-    @include b(1024) {
+    @include b(1280) {
       display: inline-block;
       position: absolute;
       top: 38px;
@@ -37,7 +37,7 @@
     align-items: center;
     height: 733px;
     position: relative;
-    @include b(1024) {
+    @include b(1280) {
       height: 100%;
       display: block;
       padding-top: 0;
@@ -72,7 +72,7 @@
     @include b(600) {
       max-height: 100%;
     }
-    @include b(1024) {
+    @include b(1280) {
       background-color: #f8f8f8;
       position: relative;
       min-width: 0;
@@ -81,7 +81,7 @@
     .slick-track {
       display: flex;
       flex-direction: column;
-      @include b(1024) {
+      @include b(1280) {
         flex-direction: row;
       }
       @include b(400) {
@@ -93,7 +93,7 @@
     .slick-slider {
       position: relative;
       width: 153px;
-      @include b(1024) {
+      @include b(1280) {
         width: 100%;
         padding: 0;
         display: flex;
@@ -163,10 +163,16 @@
     background-color: #f8f8f8;
     margin-bottom: 32px;
     cursor: pointer;
-    @include b(1024) {
+    &:first-child {
+      display: none;
+    }
+    @include b(1280) {
       margin-bottom: 0;
       padding: 0;
       height: auto;
+      &:first-child {
+        display: flex;
+      }
     }
     @include b(mobile) {
       width: 100%;
@@ -189,7 +195,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include b(1024) {
+    @include b(1280) {
       display: none;
     }
     img {
@@ -212,7 +218,7 @@
 
     &--slider {
       display: none;
-      @include b(1024) {
+      @include b(1280) {
         display: block;
         left: 0;
       }
@@ -232,7 +238,7 @@
   }
 
   &__info {
-    @include b(1024) {
+    @include b(1280) {
       width: 50%;
       padding-left: 30px;
     }
@@ -513,6 +519,9 @@
        font-size: 18px;
        color: #303030;
        width: 189px;
+       @include b(500) {
+        font-size: 16px;
+      }
     }
 
     span {
@@ -521,6 +530,10 @@
        font-size: 18px;
        color: #000;
        width: 102px;
+       @include b(500) {
+         font-size: 16px;
+         text-align: right;
+       }
     }
   }
 }

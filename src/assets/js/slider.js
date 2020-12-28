@@ -93,9 +93,10 @@ $(document).ready(function () {
     verticalSwiping: true,
     slidesToShow: 3,
     arrows: true,
+    infinite: false,
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1281,
         settings: {
           slidesToShow: 1,
           vertical: false,

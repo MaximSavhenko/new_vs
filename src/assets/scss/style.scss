@@ -158,7 +158,7 @@ h2 {
 }
 
 .container {
-  max-width: 1906px;
+  max-width: 1874px;
   padding: 0 45px;
   margin: 0 auto;
   position: relative;
@@ -382,6 +382,7 @@ h2 {
 @import "block/header.scss";
 @import "block/topMenu.scss";
 @import "block/footer.scss";
+@import "block/product_card.scss";
 @import "block/product.scss";
 @import "block/breadcrumb.scss";
 @import "block/productTabs.scss";
