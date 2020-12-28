@@ -464,6 +464,9 @@
     @include b(1024) {
       font-size: 22px;
     }
+    @include b(mobile) {
+      font-size: 22px;
+    }
   }
 
   &__hiddenMenu-sale{

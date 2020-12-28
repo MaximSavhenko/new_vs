@@ -1,3 +1,6 @@
 .product_card {
     padding-top: 30px;
+    @include b(500) {
+        padding-top: 15px;
+    }
 }

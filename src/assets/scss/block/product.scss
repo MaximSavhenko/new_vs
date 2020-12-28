@@ -3,6 +3,9 @@
   @include b(mobile) {
     padding-bottom: 50px;
   }
+  @include b(500) {
+    padding-bottom: 11px;
+  }
 
   &__images {
     display: flex;
@@ -21,13 +24,16 @@
     @include b(1280) {
       display: inline-block;
       position: absolute;
-      top: 38px;
-      right: 38px;
+      top: 36px;
+      right: 24px;
       z-index: 210;
     }
-    @include b(400) {
-      top: 24px;
-      right: 24px;
+    @include b(mobile) {
+      right: -6px;
+    }
+    @include b(500) {
+      top: 22px;
+      right: 7px;
     }
   }
 
@@ -54,6 +60,11 @@
   &__wrap-slider {
     position: relative;
     padding: 80px 0;
+    @include b(1280) {
+      background-color: #f8f8f8;
+      position: relative;
+      min-width: 0;
+    }
     @include b(mobile) {
       width: calc(100% + 90px);
       margin: 0 -45px;
@@ -64,18 +75,17 @@
       margin-bottom: 32px;
       height: 768px;
     }
+    
     @include b(500) {
+      max-height: 100%;
       height: 600px;
       width: calc(100% + 30px);
       margin: 0 -15px;
+      margin-bottom: 15px;
     }
-    @include b(600) {
-      max-height: 100%;
-    }
-    @include b(1280) {
-      background-color: #f8f8f8;
-      position: relative;
-      min-width: 0;
+
+    @include b(320) {
+      height: 322px;
     }
 
     .slick-track {
@@ -137,6 +147,9 @@
       position: absolute;
       bottom: 33px;
       margin-bottom: 0;
+      @include b(500) {
+        bottom: 12px;
+      }
       li {
         font-size: 0;
         width: 6px;
@@ -144,6 +157,9 @@
         background-color: #cac7c7;
         border-radius: 50%;
         margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
       }
       .slick-active {
         background: #979797;
@@ -171,7 +187,7 @@
       padding: 0;
       height: auto;
       &:first-child {
-        display: flex;
+        display: flex ;
       }
     }
     @include b(mobile) {
@@ -182,6 +198,10 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+      @include b(320) {
+        max-width: 250px;
+        max-height: 250px;
+      }
     }
   }
 
@@ -223,15 +243,12 @@
         left: 0;
       }
       @include b(mobile) {
-        display: block;
         left: -45px;
       }
       @include b(500) {
         left: -15px;
-      }
-      @include b(400) {
         font-size: 14px;
-        padding: 7px 25px;
+        padding: 5px 26px;
         top: 19px;
       }
     }
@@ -258,8 +275,9 @@
       font-size: 34px;
       margin-bottom: 25px;
     }
-    @include b(400) {
+    @include b(500) {
       font-size: 16px;
+      margin-bottom: 7px;
     }
   }
 
@@ -270,6 +288,9 @@
     width: 100%;
     @include b(mobile) {
       margin-bottom: 41px;
+    }
+    @include b(500) {
+      margin-bottom: 23px;
     }
   }
 
@@ -303,6 +324,11 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: cover;
+      display: flex;
+      @include b(500) {
+        max-width: 16px;
+        max-height: 16px;
+      }
     }
     span {
       color: #6f6f6f;
@@ -311,6 +337,7 @@
 
       @include b(500) {
         font-size: 12px;
+        margin-left: 15px;
       }
     }
   }
@@ -332,8 +359,8 @@
     &-wrap {
       display: flex;
       align-items: center;
-      @include b(550) {
-        margin-bottom: 22px;
+      @include b(500) {
+        margin-bottom: 18px;
       }
     }
     span {
@@ -371,8 +398,8 @@
     @include b(mobile) {
       margin-bottom: 22px;
     }
-    @include b(550) {
-      margin-bottom: 22px;
+    @include b(500) {
+      margin-bottom: 14px;
     }
   }
 
@@ -480,11 +507,12 @@
     color: #7b1839;
     text-transform: uppercase;
     position: relative;
-    @include b(500) {
-      font-size: 16px;
-    }
     @include b(mobile) {
       margin-bottom: 32px;
+    }
+    @include b(500) {
+      font-size: 16px;
+      margin-bottom: 22px;
     }
     &:before {
       content: "";
@@ -494,6 +522,9 @@
       width: 22px;
       height: 11px;
       margin-right: 19px;
+      @include b(500) {
+        margin-right: 10px;
+      }
     }
   }
 
@@ -507,6 +538,9 @@
       text-transform: uppercase;
       color: #303030;
       line-height: 22px;
+      @include b(500) {
+        font-size: 16px;
+      }
   }
 
   &__info-table-cell{
