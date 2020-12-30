@@ -1,0 +1,53 @@
+.modal {
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__inner {
+        position: relative;
+        background-color: #fff;
+        width: 888px;
+        height: 756px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    &__slider {
+       width: 688px;
+       height: 688px;
+       background-color: #F8F8F8;
+       border: 1px solid #000;
+    }
+
+    &__slider-items {
+        border: 1px solid #000;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 18px;
+        height: 18px;
+        &:after , &:before {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 18px;
+            background-color: #000;
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+}

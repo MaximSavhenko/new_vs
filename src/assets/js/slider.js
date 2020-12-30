@@ -124,6 +124,23 @@ $(document).ready(function () {
     ],
   });
 
+  $(".modal__slider").slick({
+    slidesToShow: 1,
+    arrows: true,
+    infinite: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+
   $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
     $(".product__previews-slider").slick("setPosition");
   });

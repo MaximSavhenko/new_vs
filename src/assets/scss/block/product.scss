@@ -254,6 +254,17 @@
     }
   }
 
+  &__modal-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+  }
+  
   &__info {
     @include b(1280) {
       width: 50%;
