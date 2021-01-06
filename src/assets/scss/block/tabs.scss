@@ -1,80 +1,82 @@
 .nav {
-    border-bottom: 1px solid #E4E4E4;
+  border-bottom: 1px solid #e4e4e4;
 }
 .nav-tabs {
-    display: flex;
-    justify-content: center;
-    @include b(1024) {
-        flex-wrap: nowrap;
-    }
+  display: flex;
+  justify-content: center;
+  @include b(1024) {
+    flex-wrap: nowrap;
+  }
 }
 .nav-item {
-    margin-bottom: -2px;
+  margin-bottom: -2px;
 }
 .nav-link {
-    font-size: 32px;
+  font-size: 32px;
+  color: #303030;
+  padding: 15px 40px;
+  font-weight: 500;
+  padding: 17px 15px;
+  margin-right: 50px;
+  @include b(1280) {
+    font-size: 24px;
+    margin-right: 24px;
+  }
+  @include b(mobile) {
+    padding-bottom: 25px;
+  }
+  @include b(500) {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-right: 0;
+    height: 100%;
+  }
+  @include b(350) {
+    font-size: 14px;
+  }
+  &.active {
+    border-bottom: 1px solid #000;
     color: #303030;
-    padding: 15px 40px;
-    font-weight: 500;
-    padding: 17px 15px;
-    margin-right: 50px;
-    @include b(1280) {
-        font-size: 24px;
-        margin-right: 24px;
-    }
-    @include b(mobile) {
-        padding-bottom: 25px;
-    }
-    @include b(500) {
-        font-size: 16px;
-        text-align: center;
-        padding: 10px 10px;
-        margin-right: 0;
-        height: 100%;
-    }
-    @include b(350) {
-        font-size: 14px;
-    }
-    &.active {
-        border-bottom: 1px solid #000;
-        color: #303030;
-    }
-    
-    &:hover {
-        color: inherit;
-    }
-    
+  }
+
+  &:hover {
+    color: inherit;
+  }
 }
 .active {
-    border-color: #000;
+  border-color: #000;
 }
 
 .tab-content {
-    padding-top: 82px;
-    @include b(mobile) {
-        padding-top: 56px;
-    }
+  padding-top: 82px;
+  @include b(mobile) {
+    padding-top: 56px;
+  }
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    border-color: #000;
-    border-top: none;
-    border-left: none;      
-    border-right: none;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .nav-tabs .nav-link {
-    border: none;
-    border-bottom: 3px solid transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
 }
 
 .card {
-    border: none;
+  border: none;
 
-    &.active {
-        text-transform: none;
-        font-size: inherit;
-    }
+  &.active {
+    text-transform: none;
+    font-size: inherit;
+  }
 }
 
-
+.card.fade {
+  opacity: unset;
+}

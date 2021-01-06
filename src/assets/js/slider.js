@@ -129,6 +129,7 @@ $(document).ready(function () {
     arrows: true,
     infinite: false,
     dots: true,
+    // centerMode: true,
     responsive: [
       {
         breakpoint: 1025,
@@ -141,6 +142,10 @@ $(document).ready(function () {
     ],
   });
 
+  $('#product_modal').on('shown.bs.modal', function (e) {
+    $(".modal__slider").slick("setPosition");
+  })
+
   $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
     $(".product__previews-slider").slick("setPosition");
   });
@@ -152,6 +157,8 @@ $(document).ready(function () {
   $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
     $(".product__viewed-slider").slick("setPosition");
   });
+
+  
 
   $(".product__viewed-slider").slick({
     slidesToShow: 4,
