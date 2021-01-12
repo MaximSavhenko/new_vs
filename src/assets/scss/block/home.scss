@@ -1,6 +1,13 @@
 .home {
   padding-top: 143px;
   margin-bottom: 190px;
+  h2 {
+    font-size: 24px;
+      color: #303030;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+  }
   @include b(mobile) {
     padding-top: 7px;
     margin-bottom: 138px;
@@ -15,6 +22,12 @@
     @include b(mobile) {
       margin-bottom: 65px;
     }
+    @include b(500) {
+      margin-bottom: 48px;
+      .slick-dots {
+        padding-top: 8px;
+      }
+    }
   }
   &__bigslider-wrapp {
   }
@@ -28,7 +41,7 @@
   }
 
   &__welcome {
-    margin-bottom: 120px;
+    margin-bottom: 108px;
     @include b(mobile) {
       margin-bottom: 64px;
     }
@@ -38,25 +51,38 @@
     font-size: 18px;
     color: #303030;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    @include b(500) {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
   }
 
   &__welcome-descr {
     font-size: 18px;
     font-weight: 300;
     color: #303030;
-  }
-
-  &__new-items {
-    margin-bottom: 120px;
-    @include b(mobile) {
-      margin-bottom: 64px;
+    @include b(500) {
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
+  &__new-items {
+    margin-bottom: 109px;
+    @include b(mobile) {
+      margin-bottom: 64px;
+    }
+    
+  }
+
   &__new-items-wrap {
-    display: flex;
     margin: 0 -15px;
+    .slick-dots {
+      @include b(500) {
+        padding-top: 0;
+      }
+    }
   }
 
   &__discount{
@@ -81,7 +107,7 @@
 
   &__link-btn {
     max-width: 291px;
-    margin: 32px auto 0;
+    margin: 40px auto 0;
 
     &--otherWidth {
       max-width: 228px;
@@ -90,19 +116,23 @@
   }
 
   &__sale {
-    margin-bottom: 120px;
+    margin-bottom: 109px;
     @include b(mobile) {
       margin-bottom: 64px;
     }
   }
 
   &__sale-wrap {
-    display: flex;
     margin: 0 -15px;
+    .slick-dots {
+      @include b(500) {
+        padding-top: 0;
+      }
+    }
   }
 
   &__promo {
-    margin-bottom: 120px;
+    margin-bottom: 105px;
     @include b(mobile) {
       margin-bottom: 64px;
     }
@@ -288,6 +318,10 @@
     @include b(mobile) {
       font-size: 12px;
     }
+    @include b(434) {
+      font-size: 8px;
+      padding-top: 11px;
+    }
   }
 
   &__instashop-hover-btn {
@@ -309,9 +343,13 @@
   }
 
   &__comments {
-    margin-bottom: 175px;
+    margin-bottom: 117px;
     @include b(mobile) {
       margin-bottom: 64px;
+    }
+    h2 {
+      margin-bottom: 0;
+      line-height: 30px;
     }
   }
 
@@ -321,16 +359,20 @@
     width: 100%;
   }
 
-  &__comments-caption {
-    font-size: 24px;
-    line-height: 30px;
-    color: #303030;
-    text-transform: uppercase;
-  }
-
   &__comments-slider {
     position: relative;
     width: 100%;
+    .slick-arrow.slick-prev {
+      left: -67px;
+      top: 41%;
+    }
+    .slick-arrow.slick-next {
+      right: -67px;
+      top: 41%;
+    }
+    .slick-dots {
+      padding-top: 0;
+    }
   }
 
   &__blog {
@@ -339,7 +381,7 @@
       margin-bottom: 86px;
     }
     @include b(500) {
-      margin-bottom: 71px;
+      margin-bottom: 55px;
     }
   }
 
@@ -361,6 +403,11 @@
         padding: 0;
       }
     }
+    .slick-dots {
+      @include b(500) {
+        padding-top: 17px;
+      }
+    }
   }
 
   &__blog-slider-item {
@@ -378,6 +425,7 @@
     margin-bottom: 16px;
     @include b(500) {
       width: calc(100% + 30px);
+      margin-bottom: 14px;
     }
   }
 
@@ -387,6 +435,9 @@
     text-transform: uppercase;
     margin-bottom: 15px;
     color: #000;
+    @include b(500) {
+      font-size: 14px;
+    }
   }
 
   &__blog-slider-name {
@@ -396,6 +447,9 @@
     color: #000;
     @include b(500) {
       padding: 0 15px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 16px;
     }
   }
 
@@ -404,8 +458,14 @@
     line-height: 20px;
     font-weight: 300;
     margin-bottom: 25px;
+    span {
+      display: block;
+    }
     @include b(500) {
       padding: 0 15px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 37px;
     }
   }
 
@@ -422,7 +482,7 @@
       margin-bottom: 86px;
     }
     @include b(500) {
-      margin-bottom: 70px;
+      margin-bottom: 48px;
     }
   }
 
@@ -456,6 +516,11 @@
     &:last-child {
       margin-bottom: 0;
     }
+    @include b(500) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__information-caption {
@@ -463,5 +528,10 @@
     line-height: 22px;
     margin-bottom: 30px;
     display: block;
+    @include b(500) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
   }
 }

@@ -13,6 +13,35 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".home__new-items-wrap, .home__sale-wrap").slick({
+    slidesToShow: 4,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1438,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 499,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
   
   $(".home__instashop-slider").slick({
     slidesToShow: 1,
@@ -129,7 +158,6 @@ $(document).ready(function () {
     arrows: true,
     infinite: false,
     dots: true,
-    // centerMode: true,
     responsive: [
       {
         breakpoint: 1025,

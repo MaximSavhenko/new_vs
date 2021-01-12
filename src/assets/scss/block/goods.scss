@@ -1,0 +1,120 @@
+.goods {
+  max-width: 271px;
+  margin-right: 30px;
+  &--other_w {
+    max-width: 100%;
+  }
+
+  &__descr {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 12px;
+
+    &--fz18 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    background: #f8f8f8;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include b(mobile) {
+      padding: 32px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      @include b(mobile) {
+        max-width: 260px;
+      }
+    }
+
+    &--padding {
+      padding: 34px;
+      @include b(mobile) {
+        padding: 30px;
+      }
+      @include b(500) {
+        padding: 20px;
+      }
+    }
+
+    &--close {
+      padding: 36px;
+      @include b(500) {
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    margin-bottom: 16px;
+    span {
+      font-size: 14px;
+      color: #6f6f6f;
+      margin-left: 12px;
+    }
+  }
+
+  &__property {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 300;
+      font-size: 16px;
+      margin-left: 25px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--fz {
+      span {
+        font-size: 14px;
+        margin-left: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__prise {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #5294ab;
+    text-transform: uppercase;
+    @include b(1024) {
+      font-size: 22px;
+    }
+    @include b(mobile) {
+      font-size: 22px;
+    }
+  }
+
+  &__sale {
+    font-size: 22px;
+    color: #303030;
+    text-decoration: line-through;
+  }
+}

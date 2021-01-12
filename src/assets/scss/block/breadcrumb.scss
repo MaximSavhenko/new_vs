@@ -3,6 +3,9 @@
   padding-left: 0;
   padding-top: 9px;
   display: flex;
+  li {
+    display: flex;
+  }
   @include b(mobile) {
     padding-left: 0;
     padding-right: 0;

@@ -35,7 +35,6 @@ s,
 samp,
 small,
 strike,
-strong,
 tt,
 var,
 b,
@@ -171,10 +170,10 @@ h2 {
   }
 
   &--page {
-    max-width: 1643px;
+    max-width: 1644px;
   }
   &--comments_slider  {
-    max-width: 1190px;
+    max-width: 1339px;
   }
 }
 
@@ -373,13 +372,6 @@ textarea {
   }
 }
 
-h2 {
-  font-size: 24px;
-    color: #303030;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-}
-
 .full-width-text {
   font-weight: 300;
   line-height: 28px;
@@ -391,10 +383,19 @@ h2 {
   }
 }
 
+.tabs {
+  position: fixed;
+  top: 268px;
+  z-index: 1;
+  background: #fff;
+}
+
+
 
 @import "block/slider.scss";
 @import "block/subscription.scss";
 @import "block/header.scss";
+@import "block/goods.scss";
 @import "block/topMenu.scss";
 @import "block/footer.scss";
 @import "block/product_card.scss";
