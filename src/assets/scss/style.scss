@@ -239,6 +239,11 @@ h2 {
   }
 }
 
+.btn-goods {
+  background-color: #fff;
+  color: #9e3d5f;
+}
+
 input[type="search"],
 input[type="text"], 
 input[type="email"] {
@@ -383,12 +388,19 @@ textarea {
   }
 }
 
-.tabs {
-  position: fixed;
-  top: 268px;
-  z-index: 1;
-  background: #fff;
+.block-local-tasks-block {
+  .tabs {
+    position: fixed;
+    top: 79px;
+    z-index: 100000;
+    background: #fff;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
 }
+
+
 
 
 

@@ -169,7 +169,7 @@
     }
   }
 
-  &__slider-items {
+  &__slider-items, &__slider-items-360 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,6 +178,7 @@
     padding: 12px;
     background-color: #f8f8f8;
     margin-bottom: 32px;
+    position: relative;
     cursor: pointer;
     &:first-child {
       display: none;
@@ -201,6 +202,42 @@
       @include b(320) {
         max-width: 250px;
         max-height: 250px;
+      }
+    }
+  }
+
+  &__slider-review{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    &.active {
+      justify-content: space-between;
+      img {
+        &:first-child {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: block;
+        }
+        &:nth-child(3) {
+          display: block;
+        }
+      }
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        display: none;
       }
     }
   }
@@ -253,17 +290,6 @@
       }
     }
   }
-
-  &__modal-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #000;
-    cursor: pointer;
-  }
   
   &__info {
     @include b(1280) {
@@ -303,27 +329,34 @@
     @include b(500) {
       margin-bottom: 23px;
     }
+    p {
+      font-size: 16px;
+      color: #303030;
+      @include b(500) {
+        font-size: 12px;
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 18px;
+        background-color: #6f6f6f;
+        margin-left: 24px;
+        margin-right: 27px;
+        margin-bottom: -3px;
+        @include b(500) {
+          margin-left: 16px;
+          margin-right: 14px;
+        }
+      }
+      span {
+        color: #000;
+      }
+    }
   }
 
   &__info-num {
-    font-size: 16px;
-    @include b(500) {
-      font-size: 12px;
-    }
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 1px;
-      height: 18px;
-      background-color: #6f6f6f;
-      margin-left: 24px;
-      margin-right: 27px;
-      margin-bottom: -3px;
-      @include b(500) {
-        margin-left: 16px;
-        margin-right: 14px;
-      }
-    }
+    
   }
 
   &__info-star {
@@ -357,6 +390,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+    padding-top: 30px;
     @include b(mobile) {
       order: 2;
       justify-content: space-between;

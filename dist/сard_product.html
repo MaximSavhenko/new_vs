@@ -463,7 +463,14 @@
                         <a href="#" class="product__slider-favorites"><img src="./assets/images/svg/heart.svg" alt="избранное"></a>
                         <div class="product__wrap-slider">
                             <div class="product__slider-items"><img src="./assets/images/yalinkova550.png" alt=""></div>
-                            <div class="product__slider-items"><img src="./assets/images/yalinkova-slider.png" alt=""></div>
+                            <div class="product__slider-items-360">
+                              <img src="./assets/images/yalinkova-slider.png" alt="">
+                              <div class="product__slider-review">
+                                <img src="./assets/images/svg/360.svg" alt="360" id="active-360">
+                                <img src="./assets/images/svg/2arrow.svg" alt="расскрыть" class="product__modal-btn" type="button" data-toggle="modal" data-target="#product_modal">
+                                <img src="./assets/images/svg/x.svg" alt="расскрыть" id="close-360">
+                              </div>
+                            </div>
                             <div class="product__slider-items"><img src="./assets/images/yalinkova-slider.png" alt=""></div>
                             <div class="product__slider-items"><img src="./assets/images/yalinkova-slider.png" alt=""></div>
                             <div class="product__slider-items"><img src="./assets/images/yalinkova-slider.png" alt=""></div>
@@ -472,13 +479,12 @@
                     <div class="product__image">
                         <img id="product-img" src="./assets/images/yalinkova.png" alt="Ёлка">
                         <span class="product__discount">SALE -50%</span>
-                        <button class="product__modal-btn" type="button" data-toggle="modal" data-target="#product_modal"></button>
                     </div> 
                   </div>
                   <div class="product__info">
                       <span class="product__info-title">Органайзер для бисера с прозрачной крышкой FLZB-096</span>
                       <div class="product__info-rating">
-                          <p class="product__info-num">Арт. <span>FLZB-096</span></p>
+                          <p>Арт. <span>FLZB-096</span></p>
                           <div class="product__info-star">
                               <img src="./assets/images/svg/rating.svg" alt="rating">
                               <img src="./assets/images/svg/rating.svg" alt="rating">
@@ -488,12 +494,22 @@
                               <span>30 отзывов</span>
                           </div>
                       </div>
+    
+                      <div class="home__promo-shareTime">
+                        <div class="home__promo-time">
+                            <span class="home__promo-time-title">Осталось: </span>
+                            <time datetime="2016-11-18T09:54">23ч 42м 13с</time>
+                        </div >
+                        <a href="#" class="home__promo-timeLink">подробнее об акции</a>
+                      </div>
                       
                       <div class="product__info-quantity">
                         <div class="product__info-prise">
                           <div class="product__info-prise-wrap">
                             <span>цена розничная</span>
                             <p>100 грн</p>
+                            <span class="goods__sale goods__sale--fz">120 грн</span>
+    
                           </div>
                           <button class="product__info-btn product__info-btn--responsive button" type="submit">Купить</button>
                         </div>
@@ -536,7 +552,6 @@
                                   <p>Количество в наборе:</p>
                                   <span>2</span>
                                 </div>
-                              
                             </div>
                       </div>
                   </div>
