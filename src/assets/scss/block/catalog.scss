@@ -1,0 +1,53 @@
+.catalog {
+
+    .container {
+        max-width: 1644px;
+    }
+
+    .count__wrap {
+        margin-bottom: 0;
+    }
+
+    .count__title {
+        font-size: 16px;
+    }
+
+    .count__text,.count__time {
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 500;
+    }   
+
+    .count__time {
+    }
+
+
+
+    .goods__rating {
+        display: flex;
+        justify-content: space-between;
+        height: 59px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+    }
+    &__goods{
+        display: flex;
+        margin: 0 -12px;
+        flex-wrap: wrap;
+    }
+    &__goods-wrapp{
+        padding: 0 12px;
+        width: 25%;
+        padding-bottom: 32px;
+        &:last-child {
+            padding-bottom: 67px;
+        }
+    }
+
+    
+}
+
+

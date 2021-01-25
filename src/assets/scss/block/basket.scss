@@ -1,0 +1,205 @@
+.basket {
+    display: none;
+    width: 577px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all .2s;
+    box-shadow: -10px 0px 20px rgba(120, 120, 120, 0.1);
+    overflow: auto;
+    @include b(500) {
+        width: 303px;
+    }
+    &.active {
+        display: block;
+        font-size: inherit;
+        text-transform: none;
+    }
+    &__wrapp {
+        padding: 51px 61px 24px 31px;
+        @include b(500) {
+            padding: 26px 15px 19px 15px;
+        }
+    }
+    &__title{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        @include b(500) {
+            margin-bottom: 16px;
+        }
+        span {
+            line-height: 1.25;
+            font-size: 24px;
+            @include b(500) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__close{
+        position: relative;
+        width: 18px;
+        height: 18px;
+        &:after , &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 18px;
+            background-color: #C4C4C4;
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+    &__count{
+        background-color: #E9F4FE;
+        border-radius: 4px;
+        padding: 18px 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        @include b(500) {
+            padding: 12px 45px;
+            margin-bottom: 16px;
+        }
+        span {
+            line-height: 1.25;
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 8px;
+            @include b(500) {
+                font-size: 12px;
+            }
+        }
+    }
+    &__goods{
+        padding-bottom: 40px;
+        border-bottom: 1px solid #E4E4E4;
+        @include b(500) {
+            padding-bottom: 13px;
+        }
+    }
+    &__delivery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E4E4E4;
+        @include b(500) {
+            padding-top: 16px;
+        }
+
+        > span {
+            text-transform: uppercase;
+            display: block;
+            flex: 0 0 100%;
+            max-width: 318px;
+            margin-bottom: 24px;
+            @include b(500) {
+                font-size: 14px;
+                line-height: 1.29;
+            }
+        }
+        
+    }
+    &__post{
+        display: flex;
+        align-items: center;
+        @include b(500) {
+            flex-direction: column;
+        }
+        &:last-child {
+            padding-right: 45px;
+            @include b(500) {
+                padding-right: 0px;
+            }
+        }
+        p {
+            border: 1px solid #E4E4E4;
+            padding: 12px 28px;
+            @include b(500) {
+                padding: 12px 38px;
+                margin-bottom: 4px;
+            }
+            img {
+                width: 47px;
+                height: 32px;
+                display: flex;
+            }
+        }
+        span {
+            color: #303030;
+            font-size: 16px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            margin-left: 24px;
+            @include b(500) {
+                margin-left: 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    &__checkout{
+       padding-top: 24px; 
+       display: flex;
+       flex-direction: column;
+       @include b(500) {
+           padding-top: 13px;
+       }
+    }
+    &__checkout-summ{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        @include b(500) {
+            margin-bottom: 12px;
+        }
+        span {
+            text-transform: uppercase;
+            color: #000;
+            @include b(500) {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+        p {
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 500;
+            @include b(500) {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+    }
+    &__checkout-btn{
+        display: flex;
+        justify-content: space-between;
+        @include b(500) {
+            flex-direction: column;
+        }
+        button {
+            max-width: 232px;
+            @include b(500) {
+                max-width: 100%;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>сard product</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header" id="up">
+        <div class="container">
+            <div class="header__wrap row align-items-center justify-content-center">
+                <div class="header__burger-position">
+                    <div class="header__btn-menu navbar-toggle" data-toggle="collapse" data-target="#open_topMenu__hiddenMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header__settings_bar">
+                    <div class="header__settings_wrap">
+                        <div class="header__setting ">
+                            <ul class="header__setting-wrap">
+                                <li class="header__setting-items arrow"><a href="#">ГРН</a></li>
+                                <li class="header__setting-items"><a href="#">ДОЛ</a></li>
+                                <li class="header__setting-items"><a href="#">РУБ</a></li>
+                                <li class="header__setting-items"><a href="#">ЕВРО</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__setting ">
+                            <ul class="header__setting-wrap">
+                                <li class="header__setting-items arrow"><a href="#">RU</a></li>
+                                <li class="header__setting-items"><a href="#">UAH</a></li>
+                                <li class="header__setting-items"><a href="#">EN</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__setting ">
+                            <ul class="header__setting-wrap">
+                                <li class="header__setting-items arrow">
+                                    <a href="#" class="open-lang">Украина</a>
+                                    <img src="./assets/images/svg/ukraine.svg" alt="ukraine">
+                                </li>
+                                <li class="header__setting-items">
+                                    <a href="#">Россия</a>
+                                    <img src="./assets/images/svg/russian_federation.svg" alt="russian_federation">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__setting">
+                            <ul class="header__setting-wrap justify-content-center">
+                                <li class="header__setting-items arrow">
+                                    <img src="./assets/images/svg/phone.svg" alt="phone">
+                                    <a href="tel:+380992972639">+38(099) 297-26-39</a>
+                                </li>
+                                <li class="header__setting-items justify-content-center">
+                                    <a href="tel:+380503207070">+38(050) 320-70-70</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__setting">
+                            <ul class="header__setting-wrap">
+                                <li class="header__setting-items arrow">
+                                    <a href="#" class="open-lang"> Пн - Пт с 10:00 до 18:00</a>
+                                </li>
+                                <li class="header__setting-items">
+                                    <a href="#" class="open-lang">Сб, Вс - выходной</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="#" class="header__logo_desktop">
+                        <img src="./assets/images/logo.png" alt="logo" />
+                    </a>
+                    <div class="header__logo_descr">
+                        <span>Товары для рукоделия и творчества</span>
+                    </div>
+                </div>
+                <div class="header__profile">
+                    <div class="header__profile_item"><img src="./assets/images/svg/search.svg" alt="search"></div>
+                    <div class="header__profile_item"><img src="./assets/images/svg/user.svg" alt="user"></div>
+                    <div class="header__profile_item"><img src="./assets/images/svg/iniciar-sesion.svg" alt="heart"></div>
+                    <div class="header__profile_item" id="basket"><img src="./assets/images/svg/shopping-cart.svg" alt="shopping-cart"></div>
+                    <div class="header__profile_item"><img src="./assets/images/svg/heart.svg" alt="heart"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="topMenu">
+        <div class="container">
+            <div class="topMenu__wrap-nav">
+                <nav class="topMenu__nav">
+                    <ul class="topMenu__nav-list row justify-content-center">
+                        <li class="topMenu__nav-item col-auto"><a href="#">Каталог</a></li>
+                        <li class="topMenu__nav-item col-auto"><a href="#">Акции и конкурсы</a></li>
+                        <li class="topMenu__nav-item--arrow col-auto"><a href="#" data-toggle="collapse" data-target="#open_topMenu__hiddenMenu , #open_set_contents">Содержимое набора</a></li>
+                        <li class="topMenu__nav-item--arrow col-auto" id="news"><a href="#" data-toggle="collapse" data-target="#open_topMenu__hiddenMenu , #open_news">Новости</a></li>
+                        <li class="topMenu__nav-item col-auto"><a href="#">Блог</a></li>
+                        <li class="topMenu__nav-item col-auto"><a href="#">Оплата и доставка</a></li>
+                        <li class="topMenu__nav-item--arrow col-auto" id="information"><a href="#" data-toggle="collapse" data-target="#open_topMenu__hiddenMenu , #open_information">Информация</a></li>
+                        <li class="topMenu__nav-item col-auto"><a href="#">Опт</a></li>
+                        <li class="topMenu__nav-item col-auto"><a href="#">Sale</a></li>
+                        <li class="topMenu__nav-item col-auto"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- HIDDEN MENU -->
+        <div class="topMenu__hiddenMenu collapse" id="open_topMenu__hiddenMenu">
+            <div class="topMenu__hiddenMenu-wrap">
+                <ul class="topMenu__hiddenMenu-sibebarUl">
+                    <li class="topMenu__hiddenMenu-sidebar"><a href="/">НОВИНКИ</a></li>
+                    <li class="topMenu__hiddenMenu-sidebar"><a href="/">Sale</a></li>
+                </ul>
+                <ul class="topMenu__hiddenMenu-ul">
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#beadwork">ВЫШИВКА БИСЕРОМ</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="beadwork">
+                            <li class="topMenu__hiddenMenu-sub-item" data-toggle="collapse" data-target="#open2">Набор для вышивания бисером на пластиковой основе FLPL</li>
+                            <li class="collapse" id="open2">
+                                <ul class="topMenu__hiddenMenu-sub_2">
+                                    <li class="topMenu__hiddenMenu-sub-item_2"><a href="#">Ловец снов</a></li>
+                                    <li class="topMenu__hiddenMenu-sub-item_2"><a href="#">Елочные игрушки</a></li>
+                                </ul>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item">Набор для вышивания бисером по дереву FLK</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Елочные игрушки для вышивания бисером FLE</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Открытка для вышивки бисером FLO</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы для вышивания бисером FLF</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Схемы для вышивания бисером FLS</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы "Магнит для вышивания бисером" FLA</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы для вышивания бисером с мольбертом FLMD
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы для вышивания бисером с фигурной рамкой
+                                FLG</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы для вышивания бисером с рамкой FLB</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы "Магнит для вышивания бисером с фигурной
+                                рамкой" FLD</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#embroidery_with_threads">ВЫШИВКА НИТКАМИ</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="embroidery_with_threads">
+                            <li class="topMenu__hiddenMenu-sub-item">Наборы для вышивания нитками на искусственной
+                                коже FLHL</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Набор заготовок для вышивания по дереву FLSW
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item">Заготовки для вышивки нитками по дереву FLHW
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item">Заготовки для вышивания нитками на канве FLH
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#accessories_for_needlework">АКСЕССУАРЫ ДЛЯ РУКОДЕЛИЯ</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="accessories_for_needlework">
+                            <li class="topMenu__hiddenMenu-sub-item">Органайзер для бисера FLZB</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Шкатулка для рукоделия FLZB(N)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Магнитный держатель для игл FLMH</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Нитковдеватель</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Катушки для ниток FLC(S)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Органайзер для мулине FLZ</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Наклейки для органайзеров FLZ(N)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Мольберт декоративный</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#thread_for_beading">НИТЬ ДЛЯ ВЫШИВАНИЯ БИСЕРОМ</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="thread_for_beading">
+                            <li class="topMenu__hiddenMenu-sub-item">Нить FLT</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Нить набор FLT-S</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#preciosa_beads">Бисер Preciosa Ornela (Чехия)</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="preciosa_beads">
+                            <li class="topMenu__hiddenMenu-sub-item">Белый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Бирюзовый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Голубой</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Желтый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Жемчужный</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Зеленый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Золотой</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Коричневый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Красный</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Морская волна</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Оранжевый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Розовый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Салатовый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Серый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Синий</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Фиолетовый/сиреневый</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Черный</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Разное</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#blanks_for_decoration">Заготовки для декорирования</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="blanks_for_decoration">
+                            <li class="topMenu__hiddenMenu-sub-item">Заготовка фоторамки для декорирования FLPF</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Заготовки для декорирования 3D FLC-(3D)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Заготовки для декорирования FLC</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#blanks_for_coloring">Заготовки для раскрашивания</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="blanks_for_coloring">
+                            <li class="topMenu__hiddenMenu-sub-item">Раскраска по дереву FLY</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Холст на подрамнике для рисования FLR</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Раскраска - магнит FLV</li>
+                        </ul>
+                    </li>
+                   <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#embroidered_products">Вышитые изделия</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="embroidered_products">
+                            <li class="topMenu__hiddenMenu-sub-item">Открытка на холсте FLO(E)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Картина в фигурной рамке FLG(E)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">ZМагнит на холсте FLA(E)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Картина с мольбертом FLMD(E)</li>
+                            <li class="topMenu__hiddenMenu-sub-item">Магнит с фигурной рамкой FLD(E)</li>
+                        </ul>
+                   </li>
+                </ul>
+                <ul class="topMenu__hiddenMenu-ul">
+                    <li class="topMenu__hiddenMenu-item--noarrow"><a href="#">АКЦИИ И КОНКУРСЫ</a></li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#open_set_contents">СОДЕРЖИМОЕ НАБОРА</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="open_set_contents">
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/deer.svg"
+                                    alt="deer">
+                                <p><a href="#">Содержимое набора для вышивания бисером по дереву FLK "Качалка"</a>
+                                </p>
+                            </li>
+    
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#open_news">НОВОСТИ</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="open_news">
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow"><img src="./assets/images/svg/new.svg"
+                                    alt="new">
+                                <div>
+                                    <p>19.07.2020 </p>
+                                    <a href="#"> Новинки июля!</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="topMenu__hiddenMenu-item--noarrow"><a href="/">БЛОГ</a></li>
+                    <li class="topMenu__hiddenMenu-item--noarrow"><a href="/">ОПЛАТА И ДОСТАВКА</a></li>
+                    <li>
+                        <span class="topMenu__hiddenMenu-item" data-toggle="collapse" data-target="#open_information">ИНФОРМАЦИЯ</span>
+                        <ul class="topMenu__hiddenMenu-sub collapse" id="open_information">
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow">О нас</li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow">Скидки</li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow">Обмен и возврат</li>
+                            <li class="topMenu__hiddenMenu-sub-item--noarrow">Пользовательское соглашение</li>
+                        </ul>
+                    </li>
+                    <li class="topMenu__hiddenMenu-item--noarrow"><a href="/">ОПТ</a></li>
+                    <li class="topMenu__hiddenMenu-item--noarrow"><a href="/">SALE</a></li>
+                    <li class="topMenu__hiddenMenu-item--noarrow"><a href="/">КОНТАКТЫ</a></li>
+                </ul>
+    
+                <!-- CARD -->
+                <div class="topMenu__hiddenMenu-cardWrapp">
+                    <div class="goods">
+                        <div class="goods__img">
+                            <a href="#"><img src="./assets/images/svg/spruce.png" alt="spruce"></a>
+                        </div>
+                        <a href="#" class="goods__descr">Органайзер для бисера с прозрачной крышкой FLZB-023</a>
+                        <div class="goods__rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <span><a href="#">30 отзывов</a></span>
+                        </div>
+                        <div class="goods__property">
+                            <div class="goods__article goods__article--fz">
+                                <p>Артикул: <span>FLZB-023</span></p>
+                                <p>Размер: <span>14х14,5см</span></p>
+                            </div>
+                            <span class="goods__prise">130 грн</span>
+                        </div>
+                    </div>
+                    <div class="goods">
+                        <div class="goods__img">
+                            <a href="#"><img src="./assets/images/svg/spruce.png" alt="spruce"></a>
+                        </div>
+                        <a href="#" class="goods__descr">Органайзер для бисера с прозрачной крышкой FLZB-023</a>
+                        <div class="goods__rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <img src="./assets/images/svg/rating.svg" alt="rating">
+                            <span><a href="#">30 отзывов</a></span>
+                        </div>
+                        <div class="goods__property">
+                            <div class="goods__article goods__article--fz">
+                                <p>Артикул: <span>FLZB-023</span></p>
+                                <p>Размер: <span>14х14,5см</span></p>
+                            </div>
+                            <span class="goods__prise">130 грн</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD -->
+            </div>
+    
+            <!-- responsive sett -->
+            <div class="topMenu__hiddenMenu-setting">
+                <div class="topMenu__hiddenMenu-setting_region" data-toggle="collapse" data-target="#openResponsiveSett">
+                    <span id="openSettingLang">Украина
+                        <img src="./assets/images/svg/ukraine.svg" alt="ukraine">
+                    </span>
+                </div>
+                <div class="collapse" id="openResponsiveSett">
+                    <ul class="topMenu__hiddenMenu-setting_wrap">
+                        <li class="topMenu__hiddenMenu-setting_region_item">
+                            <a href="#">Украина</a>
+                            <img src="./assets/images/svg/ukraine.svg" alt="ukraine">
+                        </li>
+                        <li class="topMenu__hiddenMenu-setting_region_item">
+                            <a href="#">Россия</a>
+                            <img src="./assets/images/svg/russian_federation.svg" alt="russian_federation">
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="topMenu__hiddenMenu-setting_lang">
+                    <span>ЯЗЫК</span>
+                    <ul class="topMenu__hiddenMenu-setting_lang-wrap">
+                        <li class="topMenu__hiddenMenu-setting_lang-item"><a href="#">RU</a></li>
+                        <li class="topMenu__hiddenMenu-setting_lang-item"><a href="#">UAH</a></li>
+                        <li class="topMenu__hiddenMenu-setting_lang-item"><a href="#">EN</a></li>
+                    </ul>
+                </div>
+    
+                <div class="topMenu__hiddenMenu-setting_currency">
+                    <span>ВАЛЮТА</span>
+                    <ul class="topMenu__hiddenMenu-setting_currency-wrap">
+                        <li class="topMenu__hiddenMenu-setting_currency-item"><a href="#">ГРН</a></li>
+                        <li class="topMenu__hiddenMenu-setting_currency-item"><a href="#">ДОЛ</a></li>
+                        <li class="topMenu__hiddenMenu-setting_currency-item"><a href="#">РУБ</a></li>
+                        <li class="topMenu__hiddenMenu-setting_currency-item"><a href="#">ЕВРО</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- responsive sett -->
+        </div>
+    </div>
+    
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrap-item">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <img src="./assets/images/logo2x.png" alt="logo_footer">
+                            <span>Товары для рукоделия и творчества</span>
+                        </div>
+                        <div class="footer__item_address">
+                            <p>Украина, Харьковская область,</p>
+                            <p>г. Харьков ул. Ивана Камышева, 9</p>
+                        </div>
+                        <span class="footer__copyright">© 2020 «volshebnaya-strana» <span>| Все права
+                                защищены</span></span>
+                    </div>
+                    <div class="footer__item_contacts">
+                        <div class="footer__contacts_wrap">
+                            <a href="tel:+380992972639" class="footer__contact_phone">+38(099) 297-26-39</a>
+                            <a href="tel:+380503207070" class="footer__contact_phone">+38(050) 320-70-70</a>
+                            <a href="mailto:info@volshebnaya-strana.com.ua"
+                                class="footer__contact_email">info@volshebnaya-strana.com.ua</a>
+                        </div>
+                        <div class="footer__social">
+                            <span>Мы в соцсетях</span>
+    
+                            <a href="/"><img src="./assets/images/svg/facebook1.svg" alt="facebook"></a>
+                            <a href="/"><img src="./assets/images/svg/instagram1.svg" alt="insta"></a>
+                            <a href="/"><img src="./assets/images/svg/vk1.svg" alt="vk"></a>
+                            <a href="/"><img src="./assets/images/svg/youtube1.svg" alt="youtube"></a>
+    
+                        </div>
+                        <div class="footer__payment">
+                            <span>Cпособы оплаты</span>
+                            <a href="/"><img src="./assets/images/svg/visa.svg" alt="visa"></a>
+                            <a href="/"><img src="./assets/images/svg/master_card.svg" alt="master_card"></a>
+                            <a href="/"><img src="./assets/images/svg/liqpay.svg" alt="liqpay"></a>
+                        </div>
+                    </div>
+                    <div class="footer__item_links">
+                        <ul>
+                            <li><a href="/">Блог</a></li>
+                            <li><a href="/">Новости</a></li>
+                            <li><a href="/">Мастер-классы</a></li>
+                            <li><a href="/">Интересные статьи</a></li>
+                            <li><a href="/">Обзор продукции</a></li>
+                            <li><a href="/">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__scrollUp">
+                        <div class="footer__scroll-wrap">
+                            <img src="./assets/images/svg/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <span class="footer__copyright-responsive">© 2020 «volshebnaya-strana» <span>| Все права защищены</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="product_modal" role="dialog" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="modal__close"  data-dismiss="modal"></button>
+                <div class="modal__slider">
+                    <div class="modal__slider-items"><img src="../assets/images/yalinkova.png" alt=""></div>
+                    <div class="modal__slider-items"><img src="../assets/images/yalinkova.png" alt=""></div>
+                    <div class="modal__slider-items"><img src="../assets/images/yalinkova.png" alt=""></div>
+                    <div class="modal__slider-items"><img src="../assets/images/yalinkova.png" alt=""></div>
+                    <div class="modal__slider-items"><img src="../assets/images/yalinkova.png" alt=""></div>
+                    <div class="modal__slider-items"><img src="../assets/images/yalinkova.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="basket">
+        <div class="basket__wrapp">
+            <div class="basket__title">
+                <span>КОРЗИНА (21)</span>
+                <button class="basket__close"></button>
+            </div>
+            <div class="basket__count">
+                <img src="../assets/images/svg/delivery.svg" alt="delivery">
+                <span>До бесплатной доставки осталось 344 грн</span>
+            </div>
+            <div class="basket__goods">
+                <div class="goods goods--basket mr-0">
+                    <div class="goods__img">
+                        <a href="#"><img src="./assets/images/item_tab_slider2.png" alt="spruce"></a>
+                    </div>
+                    <div class="goods__basket-wrap">
+                        <a class="goods__descr">Елочная игрушка для вышивания бисером FLE-003</a>
+                        <div class="goods__property">
+                            <div class="goods__article">
+                                <p>Артикул: <span>FLZB-023</span></p>
+                                <p>Размер: <span>14х14,5см</span></p>
+                            </div>
+                            <img src="../assets/images/svg/trash.svg" alt="">
+                        </div>
+                        <div class="product__info-quantity-wrap pt-4">
+                          <div class="input-group product__info-quantity-field">
+                            <button class="product__info-quantity-min"></button>
+                            <input type="number" step="1" min="1"  value="1" title="Qty" class="product__info-quantity-input">
+                            <button class="product__info-quantity-max"></button>
+                          </div>
+                          <span class="goods__prise">130 грн</span>
+                        </div>
+                    </div>
+                    <div class="product__info-quantity-wrap product__info-quantity-wrap--reponsive">
+                        <div class="input-group product__info-quantity-field">
+                          <button class="product__info-quantity-min"></button>
+                          <input type="number" step="1" min="1"  value="1" title="Qty" class="product__info-quantity-input">
+                          <button class="product__info-quantity-max"></button>
+                        </div>
+                        <span class="goods__prise">130 грн</span>
+                        <img src="../assets/images/svg/trash.svg" alt="">
+                    </div>
+                </div>  
+                <div class="goods goods--basket mr-0">
+                    <div class="goods__img">
+                        <a href="#"><img src="./assets/images/item_tab_slider2.png" alt="spruce"></a>
+                    </div>
+                    <div class="goods__basket-wrap">
+                        <a class="goods__descr">Елочная игрушка для вышивания бисером FLE-003</a>
+                        <div class="goods__property">
+                            <div class="goods__article">
+                                <p>Артикул: <span>FLZB-023</span></p>
+                                <p>Размер: <span>14х14,5см</span></p>
+                            </div>
+                            <img src="../assets/images/svg/trash.svg" alt="">
+                        </div>
+                        <div class="product__info-quantity-wrap pt-4">
+                          <div class="input-group product__info-quantity-field">
+                            <button class="product__info-quantity-min"></button>
+                            <input type="number" step="1" min="1"  value="1" title="Qty" class="product__info-quantity-input">
+                            <button class="product__info-quantity-max"></button>
+                          </div>
+                          <span class="goods__prise">130 грн</span>
+                        </div>
+                    </div>
+                    <div class="product__info-quantity-wrap product__info-quantity-wrap--reponsive">
+                        <div class="input-group product__info-quantity-field">
+                          <button class="product__info-quantity-min"></button>
+                          <input type="number" step="1" min="1"  value="1" title="Qty" class="product__info-quantity-input">
+                          <button class="product__info-quantity-max"></button>
+                        </div>
+                        <span class="goods__prise">130 грн</span>
+                        <img src="../assets/images/svg/trash.svg" alt="">
+                    </div>
+                </div>  
+            </div >
+            <div class="basket__delivery"> 
+                <span class="">ориентировочная стоимость доставки в ваш регион:</span>
+                <div class="basket__post">
+                    <p><img src="./assets/images/svg/Nova_Poshta.svg" alt="Нова пошта"></p>
+                    <span>45 грн</span>
+                </div>
+    
+                <div class="basket__post">
+                    <p><img src="./assets/images/svg/ukrposhta.svg" alt="Нова пошта"></p>
+                    <span>50 грн</span>
+                </div>
+            </div>
+            <div class="basket__checkout">
+                <div class="basket__checkout-summ">
+                    <span>сумма заказа:</span>
+                    <p>260 грн</p>
+                </div>
+               <div class="basket__checkout-btn">
+                    <button class="button button--white">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+                    <button class="button">оформить заказ</button>
+               </div>
+            </div>
+        </div>
+    </div></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
