@@ -45,7 +45,6 @@ $(document).ready(function () {
     $(el).each(function() {
       var endtime = $(this).attr("data-deadline");
       var clock = $(this);
-      console.log(clock);
       var daysSpan = clock.find(".days");
       var hoursSpan = clock.find(".hours");
       var minutesSpan = clock.find(".minutes");

@@ -1,0 +1,13 @@
+.topMenu__hiddenMenu-ul--width {
+    width: 100%;
+    @include b(mobile) {
+        display: none;
+    }
+    .topMenu__hiddenMenu-sub-item {
+        max-width: 346px;
+        &:after {
+            content:'';
+            display: none;
+        }
+    }
+}
