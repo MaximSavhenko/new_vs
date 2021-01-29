@@ -1,6 +1,6 @@
 .topMenu__hiddenMenu-ul--width {
     width: 100%;
-    @include b(mobile) {
+    @include b(1024) {
         display: none;
     }
     .topMenu__hiddenMenu-sub-item {

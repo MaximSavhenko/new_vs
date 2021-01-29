@@ -6,6 +6,8 @@
   height: 100%;
   &--other_w {
     max-width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__discount{
@@ -173,11 +175,9 @@
     }
 
     img {
-      max-width: 100%;
-      max-height: 100%;
-      @include b(mobile) {
-        max-width: 260px;
-      }
+      max-width: 260px;
+      height: 260px;
+      object-fit: cover;
     }
 
     &--padding {
@@ -223,7 +223,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include b(mobile) {
+    @include b(1024) {
         flex-wrap: wrap;
         align-items: flex-end;
     }
@@ -232,6 +232,7 @@
   &__article {
     display: flex;
     flex-direction: column;
+    text-transform: none;
     span {
       font-weight: 300;
       font-size: 16px;
@@ -264,7 +265,7 @@
     @include b(1024) {
       font-size: 22px;
     }
-    @include b(mobile) {
+    @include b(1024) {
       font-size: 26px;
       line-height: 32px;
     }
@@ -278,7 +279,7 @@
       font-size: 24px !important;
       padding-left: 24px;
     }
-    @include b(mobile) {
+    @include b(1024) {
         flex: 0 0 100%;
         order: -1;
         text-align: right;

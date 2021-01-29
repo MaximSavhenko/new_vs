@@ -218,8 +218,8 @@
   &__previews-slider-item {
     text-align: center;
     img {
-      max-width: 1190px;
-      max-height: 760px;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: cover;
     }
   }
@@ -416,6 +416,20 @@
 
   &__viewed{
     padding-bottom: 120px;
+    .container--page {
+      @include b(1705) {
+          max-width: 1600px;
+      }
+      @include b(1600) {
+          max-width: 1500px;
+      }
+      @include b(1505) {
+          max-width: 1200px;
+      }
+      @include b(1300) {
+          max-width: 1100px;
+      }
+    }
   }
 
   &__viewed-slider {
@@ -427,6 +441,8 @@
     .slick-list {
       overflow: hidden;
     }
+
+
     
     .slick-slider {
       position: relative;

@@ -86,8 +86,9 @@
 
     .count {
         margin-left: auto;
-        @include b(mobile) {
-            display: none;
+        @include b(1550) {
+            width: 100%;
+            margin-top: 12px;
         }
     }
 
@@ -109,6 +110,12 @@
     .goods--other_w {
         display: flex;
         justify-content: space-between;
+    }
+
+    .goods__rating {
+        @include b(1550) {
+            flex-direction: column;
+        }
     }
 
     .goods__img--close {
@@ -136,6 +143,9 @@
         padding: 0 12px;
         width: 25%;
         padding-bottom: 32px;
+        @include b(1024) {
+            width: 33.333%;
+        }
         @include b(mobile) {
             width: 50%;
             padding: 0 15px;

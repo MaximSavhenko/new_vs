@@ -98,11 +98,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
+    z-index: 1000;
     img {
       max-width: 100%;
       max-height: 100%;
       display: flex;
+      @include b(500) {
+        max-width: 147px;
+        max-height: 22px;
+      }
     }
     &_desktop {
       @include b(768) {

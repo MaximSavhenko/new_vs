@@ -5,9 +5,9 @@
   background: #5294ab;
   position: relative;
   @include b(tablet) {
-    padding: 32px 0 26px 0;
+    padding: 32px 0 21px 0;
   }
-  @include b(mobile) {
+  @include b(767) {
     padding: 24px 0 34px 0;
   }
 
@@ -24,19 +24,22 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    @include b(mobile) {
+    @include b(767) {
       flex-direction: column;
     }
   }
 
   &__item {
-    @include b(mobile) {
+    @include b(767) {
       order: 1;
     }
     &_address {
       margin-bottom: 86px;
-      @include b(mobile) {
-        margin-bottom: 24px;
+      @include b(tablet) {
+          margin-bottom: 73px;
+      }
+      @include b(767) {
+        margin-bottom: 21px;
       }
       p {
         color: #fff;
@@ -46,7 +49,7 @@
           font-size: 12px;
           line-height: 15px;
         }
-        @include b(mobile) {
+        @include b(767) {
           font-size: 16px;
           line-height: 20px;
         }
@@ -56,20 +59,35 @@
     &_contacts {
       display: flex;
       flex-direction: column;
-      @include b(mobile) {
+      @include b(tablet) {
+          width: 30%;
+      } 
+      @include b(767) {
+        width: 100%;
         order: 3;
       }
     }
 
     &_links {
-      @include b(mobile) {
+      @include b(tablet) {
+          width: 30%;
+      }
+      
+      @include b(767) {
         order: 2;
         margin-bottom: 35px;
+        width: 100%;
       }
       li {
         margin-bottom: 16px;
         &:last-child {
           margin-bottom: 0;
+        }
+        @include b(mobile) {
+            margin-bottom: 11px;
+        }
+        @include b(767) { 
+          margin-bottom: 14px;
         }
       }
       a {
@@ -82,7 +100,7 @@
           line-height: 19px;
         }
 
-        @include b(mobile) {
+        @include b(767) {
           font-size: 16px;
           line-height: 21px;
         }
@@ -96,22 +114,40 @@
     flex-direction: column;
     align-items: center;
     max-width: 330px;
-    span {
-      font-size: 16px;
-      color: #fff;
-      @include b(mobile) {
-        display: none;
-      }
-    }
-    @include b(mobile) {
-      margin-bottom: 24px;
-      order: 1;
-    }
-
     img {
       max-width: 100%;
       max-height: 100%;
     }
+    span {
+      font-size: 16px;
+      color: #fff;
+      display: none;
+      @include b(500) {
+      }
+    }
+    @include b(tablet) {
+        max-width: 201px;
+        max-height: 30px;
+        margin-bottom: 72px;
+    }
+    @include b(767) {
+      margin-bottom: 35px;
+      order: 1;
+      max-width: 100%;
+      align-items: flex-start;
+      img {
+        max-width: 188px;
+        max-height: 40px;
+      }
+      span {
+        font-size: 9px;
+        line-height: 10px;
+        padding-left: 10px;
+        display: inline-block;
+      }
+    }
+
+    
   }
 
   &__copyright {
@@ -124,7 +160,7 @@
         display: block;
       }
     }
-    @include b(mobile) {
+    @include b(767) {
       display: none;
     }
   }
@@ -133,7 +169,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
-    @include b(mobile) {
+    @include b(767) {
       margin-bottom: 32px;
     }
   }
@@ -147,7 +183,7 @@
       font-size: 12px;
       line-height: 16px;
     }
-    @include b(mobile) {
+    @include b(767) {
       font-size: 16px;
       line-height: 21px;
     }
@@ -161,7 +197,7 @@
       margin-bottom: 12px;
       font-size: 14px;
     }
-    @include b(mobile) {
+    @include b(767) {
       font-size: 16px;
       line-height: 21px;
     }
@@ -203,7 +239,7 @@
 
   &__payment {
     margin-bottom: 0;
-    @include b(mobile) {
+    @include b(767) {
       margin-bottom: 32px;
     }
   }
@@ -211,7 +247,12 @@
   &__scrollUp {
     display: flex;
     align-items: flex-end;
-    @include b(mobile) {
+    @include b(tablet) {
+        position: absolute;
+        bottom: 3px;
+        right: 65px;
+    }
+    @include b(767) {
       position: absolute;
       bottom: 64px;
       right: 65px;
@@ -232,8 +273,8 @@
       max-height: 100%;
     }
     @include b(tablet) {
-      width: 45px;
-      height: 45px;
+      width: 49px;
+      height: 49px;
       img {
         max-width: 21px;
         max-height: 12px;
@@ -250,7 +291,7 @@
 
   &__copyright-responsive {
     display: none;
-    @include b(mobile) {
+    @include b(767) {
       display: block;
       order: 6;
       color: #fff;

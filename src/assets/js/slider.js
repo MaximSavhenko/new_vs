@@ -214,7 +214,7 @@ $(document).ready(function () {
         breakpoint: 1706,
         settings: {
           slidesToShow: 3,
-          arrows: false,
+          arrows: true,
           dots: true,
         },
       },

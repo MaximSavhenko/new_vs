@@ -9,7 +9,7 @@
 
   &__images {
     display: flex;
-    @include b(1280) {
+    @include b(1398) {
       width: 50%;
       display: block;
     }
@@ -21,7 +21,7 @@
 
   &__slider-favorites {
     display: none;
-    @include b(1280) {
+    @include b(1398) {
       display: inline-block;
       position: absolute;
       top: 36px;
@@ -43,7 +43,7 @@
     align-items: center;
     height: 733px;
     position: relative;
-    @include b(1280) {
+    @include b(1398) {
       height: 100%;
       display: block;
       padding-top: 0;
@@ -60,7 +60,7 @@
   &__wrap-slider {
     position: relative;
     padding: 80px 0;
-    @include b(1280) {
+    @include b(1398) {
       background-color: #f8f8f8;
       position: relative;
       min-width: 0;
@@ -91,7 +91,7 @@
     .slick-track {
       display: flex;
       flex-direction: column;
-      @include b(1280) {
+      @include b(1398) {
         flex-direction: row;
       }
       @include b(400) {
@@ -103,7 +103,7 @@
     .slick-slider {
       position: relative;
       width: 153px;
-      @include b(1280) {
+      @include b(1398) {
         width: 100%;
         padding: 0;
         display: flex;
@@ -183,7 +183,7 @@
     &:first-child {
       display: none;
     }
-    @include b(1280) {
+    @include b(1398) {
       margin-bottom: 0;
       padding: 0;
       height: auto;
@@ -252,7 +252,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include b(1280) {
+    @include b(1398) {
       display: none;
     }
     img {
@@ -275,7 +275,7 @@
 
     &--slider {
       display: none;
-      @include b(1280) {
+      @include b(1398) {
         display: block;
         left: 0;
       }
@@ -292,7 +292,7 @@
   }
   
   &__info {
-    @include b(1280) {
+    @include b(1398) {
       width: 50%;
       padding-left: 30px;
     }
@@ -386,6 +386,13 @@
     }
   }
 
+  .count {
+    margin: 0;
+    @include b(mobile) {
+        margin-bottom: 12px;
+    }
+  }
+
   &__info-prise {
     display: flex;
     align-items: center;
@@ -422,6 +429,20 @@
       @include b(550) {
         font-size: 22px;
       }
+    }
+  }
+
+  &__sale{
+    font-size: 22px;
+    color: #303030;
+    text-decoration: line-through;
+    font-size: 24px !important;
+    padding-left: 24px;
+    
+    @include b(1024) {
+        text-align: right;
+        font-size: 18px;
+        line-height: 0px;
     }
   }
 

@@ -67,7 +67,7 @@
     }
     a {
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
     &:hover {
@@ -146,15 +146,13 @@
       padding-left: 15px;
       padding-right: 20px;
     }
-    // &.openHiddenMenu {
-    //   right: 0;
-    // }
     &.show {
       top: 53px;
     }
     a {
       &:hover {
-        text-decoration: underline;
+        color: inherit;
+        text-decoration: none;
       }
     }
   }
@@ -228,7 +226,7 @@
       content: "";
       position: absolute;
       bottom: 6px;
-      right: -16px;
+      right: -21px;
       margin-left: 9px;
       z-index: 200;
       width: 8px;
@@ -315,7 +313,7 @@
 
     &--noarrow {
       cursor: pointer;
-      margin-bottom: 12px;
+      padding-top: 12px;
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
@@ -347,6 +345,7 @@
 
   &__hiddenMenu-sub-item_2 {
     margin-bottom: 8px;
+    color: #000;
     &:last-child {
       margin-bottom: 0;
     }
