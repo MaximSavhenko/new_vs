@@ -175,8 +175,8 @@
     }
 
     img {
-      max-width: 260px;
-      height: 260px;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: cover;
     }
 
@@ -198,6 +198,18 @@
       }
     }
   }
+
+  &__favorites{
+    position: absolute;
+    right: 17px;
+    top: 19px;
+    img {
+      max-width: 24px;
+      max-height: 24px;
+    }
+  }
+
+
 
   &__rating {
     display: flex;

@@ -1451,8 +1451,8 @@ textarea:focus {
 }
 
 .goods__img img {
-    max-width: 260px;
-    height: 260px;
+    max-width: 100%;
+    max-height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -1482,6 +1482,17 @@ textarea:focus {
         width: calc(100% + 30px);
         margin: 0 -15px;
     }
+}
+
+.goods__favorites {
+    position: absolute;
+    right: 17px;
+    top: 19px;
+}
+
+.goods__favorites img {
+    max-width: 24px;
+    max-height: 24px;
 }
 
 .goods__rating {
@@ -4433,12 +4444,6 @@ textarea:focus {
     align-items: center;
     background-color: #FF5660;
     color: #fff;
-}
-
-.home__favorites {
-    position: absolute;
-    right: 17px;
-    top: 19px;
 }
 
 .home__link-btn {
