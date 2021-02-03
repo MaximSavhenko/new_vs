@@ -359,6 +359,18 @@
     
   }
 
+  .count {
+    max-width: 459px;
+    flex-direction: row;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+      &__wrap{
+          margin-bottom: 0;
+      }
+  }
+
   &__info-star {
     display: flex;
     align-items: center;
@@ -397,7 +409,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 24px;
-    padding-top: 30px;
+    padding-top: 15px;
     @include b(mobile) {
       order: 2;
       justify-content: space-between;

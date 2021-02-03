@@ -3125,6 +3125,23 @@ textarea:focus {
     color: #000;
 }
 
+.product .count {
+    max-width: 459px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 24px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.product .count__wrap {
+    margin-bottom: 0;
+}
+
 .product__info-star {
     display: -ms-flexbox;
     display: flex;
@@ -3180,7 +3197,7 @@ textarea:focus {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 24px;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 @media (max-width: 768px) {
