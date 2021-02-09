@@ -275,15 +275,6 @@ input[type="password"]
   }
 }
 
-input[type="text"] {
-  border: 1px solid #fff;
-  color: #fff;
-  &::placeholder {
-    color: #fff;
-    font-weight: 500;
-  }
-}
-
 input[type="file"] {
   display: flex;
   justify-content: center;
@@ -403,8 +394,37 @@ textarea {
   }
 }
 
+.block-system {
+  max-width: 1874px;
+  padding: 0 45px;
+  margin: 0 auto;
+  position: relative;
+  .form-required {
+      max-width: 100%;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.8;
+      margin-bottom: 8px;
+  }
+  .form-text {
+      max-width: 512px;
+      margin-bottom: 12px;
+  }
+  .form-type-password {
+      font-size: 16px;
+      max-width: 512px;
+      display: block;
+  }
+  .button {
+      max-width: 205px;
+      margin: 40px auto 0 auto;
+  }
+  .description {
+      max-width: 700px;
+      font-size: 16px;
+  }
 
-
+}
 
 
 @import "block/slider.scss";
@@ -422,6 +442,7 @@ textarea {
 @import "block/home.scss";
 @import "block/modal.scss";
 @import "block/basket.scss";
+@import "block/search.scss";
 @import "block/catalog.scss";
 @import "block/count.scss";
 @import "block/catalog-bigblock.scss";

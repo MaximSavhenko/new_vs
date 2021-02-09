@@ -31,6 +31,7 @@
     display: flex;
     max-width: 100%;
     margin-bottom: 30px;
+    flex-direction: row;
     @include b(500) {
         flex-wrap: wrap;
         margin-bottom: 12px;
@@ -75,9 +76,7 @@
     }
     .product__info-quantity-wrap  {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      flex: 0 0 100%;
       @include b(mobile) {
           margin-bottom: 0;
       }
@@ -100,6 +99,10 @@
         .goods__prise {
           margin-right: 17px;
         }
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
     .goods__prise {
@@ -107,7 +110,6 @@
       line-height: 1.23;
       @include b(500) {
           font-size: 20px;
-
       }
     }
     .goods__property {

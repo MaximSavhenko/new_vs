@@ -1,5 +1,4 @@
 .catalog {
-
     h2 {
        line-height: 1.25;
        font-size: 24px;
@@ -125,8 +124,11 @@
     }
 
     &__wrap {
-        padding-bottom: 67px;
         display: flex;
+        flex-direction: column;
+        &--nocolumn {
+            flex-direction: row;
+        }
     }
     &__goods{
         display: flex;
