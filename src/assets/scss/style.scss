@@ -268,11 +268,22 @@ input[type="password"]
   }
   &::placeholder {
     color: #3c4146;
-    font-weight: 500;
+    font-weight: normal;
   }
   &:focus {
     box-shadow: 0 0 3px 1px #68a8e0;
   }
+}
+
+input[type="search"] {
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 17px;
+    &:focus {
+      box-shadow: none;
+    }
 }
 
 input[type="file"] {
@@ -348,6 +359,11 @@ textarea {
   }
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .arrow {
   &::after {
     content: "";
@@ -394,17 +410,16 @@ textarea {
   }
 }
 
-.block-system {
-  max-width: 1874px;
-  padding: 0 45px;
+.user-login-form{
+  max-width: 512px;
   margin: 0 auto;
-  position: relative;
   .form-required {
       max-width: 100%;
       font-size: 12px;
       font-weight: 500;
       line-height: 1.8;
       margin-bottom: 8px;
+
   }
   .form-text {
       max-width: 512px;
@@ -428,6 +443,7 @@ textarea {
 
 
 @import "block/slider.scss";
+@import "block/star.scss";
 @import "block/pagination.scss";
 @import "block/subscription.scss";
 @import "block/header.scss";

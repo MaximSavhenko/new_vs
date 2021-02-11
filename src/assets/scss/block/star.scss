@@ -1,0 +1,58 @@
+.star {
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        // width: 10%;
+    }
+
+    &__wrap {
+        position: relative;
+        font-size: 40px;
+        display: inline-block;
+        line-height: 1.25;
+        max-width: 100%;
+        &:before {
+            content:'★★★★★';
+            display: block;
+        }
+    }
+
+    &__rating-item {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+
+    &__item {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        &:checked , &:checked ~ .star__item-label {
+            color: #FF9017;
+        }
+    }
+
+    &__item-label {
+        flex: 0 0 20%;
+        height: 100%;
+        cursor: pointer;
+        color: #E4E4E4;
+        &:before {
+            content:'★';
+            display: block;
+            transition: color 0.2s ease 0s;
+        }
+        &:hover , &:hover ~ & , &:checked ~ &:hover  {
+            color: #FF9017;
+        }
+    }
+}
+

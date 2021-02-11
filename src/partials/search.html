@@ -1,21 +1,28 @@
 <div class="search">
     <div class="search__wrap">
-        <div class="search__input">
-            <input type="search">
-            <img src="../assets/images/svg/arrow_product.svg" alt="Назад">
+        <div class="search__functional">
+            <div class="search__input">
+                <button type="submit"><img src="./assets/images/svg/search.svg" alt=""></button>
+                <input type="search" placeholder="Поиск">
+            </div>
+            <img src="../assets/images/svg/arrow_product.svg" alt="Назад" class="search__close">
         </div>
-        <div class="search__item">
-            {{>goods}}
-            {{>goods}}
-            {{>goods}}
-            {{>goods}}
+        <div class="search__wrap-tree">
+            <div class="search__item">
+                {{>goods-search}}
+                {{>goods-search}}
+                {{>goods-search}}
+                {{>goods-search}}
+                <div class="search__result">
+                    <span>ВСЕ ТОВАРЫ</span>
+                    <a href="#">Найдено 19 товаров</a>
+                </div>
+            </div>
+            <div class="search__menu">
+                <p>Категории</p>
+                {{>search-menu}}
+            </div>
         </div>
-        <div class="search__menu">
-            {{>catalog-menu}}
-        </div>
-        <div class="search__result">
-            <span>ВСЕ ТОВАРЫ</span>
-            <p>Найдено 19 товаров</p>
-        </div>
+        
     </div>
 </div>
