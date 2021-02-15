@@ -1,0 +1,53 @@
+.favorites {
+
+    &__table {
+        width: 100%;
+        margin: 0px 0px 0px 110px;
+        padding-bottom: 198px;
+        @include b(tablet) {
+            margin: 0; 
+            padding-bottom: 65px;
+        }
+        @include b(mobile) {
+            padding-bottom: 52px;
+        }
+    }
+
+    &__title {
+        position: relative;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+        display: flex;
+        @include b(tablet) {
+            display: none;
+        }
+        &:after {
+           content:'';
+           display: block;
+           position: absolute;
+           bottom: -2px;
+           left: 0;
+           width: 9999px;
+           height: 1px;
+           background-color: #E4E4E4;
+        }
+        span{
+           line-height: 1.6;
+           font-size: 14px;
+           color: #303030;
+           display: block;
+           &:first-child {
+                width: 46%;
+           }
+           &:nth-child(2) {
+               width: 12%;
+           }
+           &:nth-child(3) {
+                width: 42%;
+           }
+        }
+    }
+
+    &__goods {
+    }
+}

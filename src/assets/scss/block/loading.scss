@@ -1,0 +1,38 @@
+.loading {
+    &__download {
+        padding-bottom: 665px;
+       
+        width: 100%;
+        padding-top: 88px;
+        padding-left: 262px;
+        @include b(tablet) {
+            padding: 0;
+            padding-bottom: 396px;
+        }
+        @include b(mobile) {
+            padding-bottom: 318px;
+        }
+        span {
+            color: #303030;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            display: block;
+            @include b(tablet) {
+                margin-bottom: 32px;
+            }
+        }
+        .button {
+            max-width: 286px;
+            margin: 0;
+            @include b(tablet) {
+                max-width: 258px;
+            }
+            @include b(500) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+

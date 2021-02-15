@@ -1,0 +1,188 @@
+.personal-account {
+    .container {
+        max-width: 1597px;
+    }
+
+    .breadcrumb {
+        padding-top: 60px;
+        @include b(mobile) {
+            padding-top: 23px;
+        }
+    }
+
+    .comment-form__auth-item {
+        margin-right: 0;
+        
+        @include b(tablet) {
+            margin-right: 22px;
+        }
+    }
+
+    .comment-form__auth {
+        justify-content: space-between;
+        margin-bottom: 40px;
+        padding-top: 31px;
+        @include b(tablet) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        padding-top: 52px;
+        @include b(tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__nav {
+        width: 100%;
+        max-width: 225px;
+        padding-bottom: 24px;
+
+        @include b(tablet) {
+            max-width: 100%;
+            padding-bottom: 40px;
+        }
+        @include b(mobile) {
+            padding-bottom: 32px;
+        }
+        ul {
+            @include b(tablet) {
+                display: flex;
+            }
+            @include b(mobile) {
+                flex-wrap: wrap;
+                margin: 0 -11px;
+            }
+        }
+        &> p {
+            font-size: 24px;
+            line-height: 1.25;
+            color: #303030;
+            margin-bottom: 57px;
+            @include b(tablet) {
+                margin-bottom: 48px;
+            }
+            @include b(mobile) {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+        }
+        li {
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include b(tablet) {
+                margin-right: 24px;
+                margin-bottom: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            @include b(mobile) {
+                margin-right: 0;
+                padding: 0 11px;
+                &:first-child {
+                    padding-bottom: 14px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a { 
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: underline;
+                    color: #303030;
+                }
+                @include b(mobile) {
+                    font-size: 14px;
+                    line-height: 1.21;
+                }
+            }
+        }
+    }
+
+    &__link{
+        &.active {
+            border-bottom: 1px solid #303030;
+            font-size: inherit;
+        }
+    }
+
+    &__form {
+        width: 524px;
+        margin-left: 262px;
+        padding-bottom: 108px;
+        @include b(tablet) {
+            width: 100%;
+            max-width: 100%;
+            padding-bottom: 125px;
+            margin-left: 0;
+        }
+        @include b(mobile) {
+            padding-bottom: 95px;
+        }
+
+        label {
+            line-height: 1.8;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            color: #303030;
+        }
+        input {
+            max-width: 458px;
+            @include b(tablet) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__title{
+        line-height: 1.6;
+        font-size: 14px;
+        color: #303030;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    &__formBlock{
+        margin-bottom: 32px;
+    }
+
+    &__password {
+        display: flex;
+        input {
+            border-right: 0;
+            border-radius: 4px 0px 0px 4px;
+            max-width: 400px;
+        }
+        button {
+            width: 58px;
+            height: 48px;
+            border: 1px solid #E4E4E4;
+            border-radius: 0px 4px 4px 0px;
+            border-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__phone { 
+        display: flex;
+    }
+
+    .button {
+        max-width: 243px;
+        margin: 0 auto;
+        @include b(mobile) {
+            max-width: 100%;
+        }
+    }
+}
+

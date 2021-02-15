@@ -1,0 +1,118 @@
+.orders {
+
+    &__tabs {
+        width: 100%;
+        margin-left: 110px;
+        padding-top: 92px;
+        padding-bottom: 596px;
+        @include b(tablet) {
+            padding-bottom: 283px;
+        }
+        @include b(mobile) {
+            padding-bottom: 76px;
+        }
+        @include b(tablet) {
+            padding-top: 0;
+            margin-left: 0;
+        }
+       
+        table {
+            width: 100%;
+            
+        }
+
+        tr {
+            @include b(mobile) {
+                display: flex;
+                flex-direction: column;
+                padding-top: 32px;
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        th,td {
+            color: #303030;
+            vertical-align: middle;
+            border: 1px solid #E4E4E4;
+            border-top: none;
+            text-align: center;
+            height: 44px;
+            span {
+                display: none;
+            }
+            @include b(tablet) {
+                font-size: 16px;
+            }
+            @include b(mobile) {
+                border-right: none;
+                border-left: none;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                span {
+                    display: inline;
+                    font-weight: 400;                    
+                }
+            }
+            
+            &:first-child {
+                border-left: none;
+                width: 12.4%;
+                @include b(tablet) {
+                    width: auto;
+                }
+            }
+            &:nth-child(2) {
+                width: 24.3%;
+                @include b(tablet) {
+                    width: auto;
+                }
+            }
+            &:nth-child(3) {
+                width: 26%;
+                @include b(tablet) {
+                    width: auto;
+                }
+
+            }
+            &:nth-child(4) {
+                width: 21%;
+                @include b(tablet) {
+                    width: auto;
+                }
+
+            }
+            &:last-child {
+                border-right: none;
+                width: 12%;
+                @include b(tablet) {
+                    width: auto;
+                }
+            }
+        }
+
+        th {
+            @include b(mobile) {
+                display: none;
+            }
+        }
+
+        td {
+            font-weight: 300;
+            font-size: 16px;
+            img {
+                display: flex;
+                width: 16px;
+                height: 16px;
+                margin: 0 auto;
+                @include b(mobile) {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
+

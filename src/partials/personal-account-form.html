@@ -1,0 +1,45 @@
+<form class="personal-account__form">
+    <div class="personal-account__formBlock">
+        <p class="personal-account__title">Данные получателя</p>
+        <label>фамилия*</label>
+        <input type="text">
+        <label>ИМЯ*</label>
+        <input type="text">
+        <label>ОТЧЕСТВО</label>
+        <input type="text">
+        <label>e-MAIL*</label>
+        <input type="email">
+        <label>номер телефона*</label>
+        <div class="personal-account__phone">
+            <button type="submit"></button> 
+            <input type="number">
+        </div>
+        <label>ДАТА РОЖДЕНИЯ*</label>
+        <input type="number" placeholder="ДД.ММ.ГГГГ">
+    </div>
+    <div class="personal-account__formBlock">
+        <p class="personal-account__title">АДРЕС</p>
+        <label>СТРАНА</label>
+        <input type="text">
+        <label>ОБЛАСТЬ</label>
+        <input type="text">
+        <label>ГОРОД/ПОСЕЛОК</label>
+        <input type="text">
+    </div>
+    <div class="personal-account__formBlock">
+        <p class="personal-account__title">ИЗМЕНИТЬ ПАРОЛЬ</p>
+        <label>ПАРОЛЬ</label>
+        <div class="personal-account__password">
+            <input type="password" class="personal-account__inputpass">
+            <button type="button" class="personal-account__passbtn"><img src="./assets/images/svg/eye.svg" alt="" id="inpImg"></button>
+        </div>
+        <label>ПОВТОРИТЕ ПАРОЛЬ</label>
+        <div class="personal-account__password">
+            <input type="password" class="personal-account__inputpass">
+            <button type="button" class="personal-account__passbtn"><img src="./assets/images/svg/eye.svg" alt="" id="inpImg"></button>
+        </div>
+    </div>
+    <p class="personal-account__title mb-0">ВХОД ЧЕРЕЗ СОЦИАЛЬНЫЕ СЕТИ</p>
+     {{>enter}}
+    <button type="submit" class="button">сохранить</button>
+</form>

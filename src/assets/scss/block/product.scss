@@ -488,7 +488,11 @@
     margin-right: 43px;
     display: flex;
     justify-content: space-between;
-
+    input {
+      border: none;
+      width: 33.333%;
+      padding: 0;
+    }
     &.input-group {
       margin-right: 17px;
     }
