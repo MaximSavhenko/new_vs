@@ -78,13 +78,13 @@ function togglePassword() {
 
 togglePassword();
 
-function linkAction() {
-    let link = document.querySelector(".personal-account__link");
+// function linkAction() {
+//     let link = document.querySelector(".personal-account__link");
     
-    link.onclick = function () {
-      link.classList.toggle("active");
-    }
-}
+//     link.onclick = function () {
+//       link.classList.add("active");
+//     }
+// }
 
-linkAction();
+// linkAction();
 

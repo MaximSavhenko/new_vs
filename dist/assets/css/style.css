@@ -823,6 +823,11 @@ img {
     width: 100%;
 }
 
+.subscription input {
+    height: 40px;
+    border-radius: 4px 0 0 4px;
+}
+
 @media (max-width: 767px) {
     .subscription {
         -ms-flex-align: center;
@@ -6909,6 +6914,11 @@ img {
         font-size: 14px;
         line-height: 1.21;
     }
+}
+
+.personal-account__link.active {
+    border-bottom: 1px solid #303030;
+    font-size: inherit;
 }
 
 .personal-account__form {
