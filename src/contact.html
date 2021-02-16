@@ -4,6 +4,7 @@ title: Контакты
 ---
 
 <div class="contact">
+    
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -11,42 +12,50 @@ title: Контакты
                 <li class="breadcrumb-item"><a href="#">Контакты</a></li>
             </ol>
         </nav>
+        <p class="contact__caption">КОНТАКТЫ</p>
+        <div class="contact__map">
+            <img class="contact__map-img" src="./assets/images/mapX2.jpg" alt="Карта">
+            <img class="contact__map-img-responsive" src="./assets/images/map-responsive.jpg" alt="Карта">
+            <img class="contact__map-img-responsive-mob" src="./assets/images/map-responsive-mobile.jpg" alt="Карта">
+        </div>
+        <p class="contact__descr">Связаться с нами</p>
         <div class="contact__wrapp">
-            <p class="contact__caption">КОНТАКТЫ</p>
-            <img src="./assets/images/map.png" alt="">
-            <p>Связаться с нами</p>
-            <div class="contact__info">
-                <p class="contact__title">Контактная информация компании ТМ «Волшебный Лес»</p>
-                <p>Название</p>
-                <span>ТМ «Волшебный Лес»</span>
-                <p>Адрес</p>
-                <span>Украина, Харьковская область, г. Харьков</span>
-                <span>ул. Ивана Камышева, 9</span>
-                <p>Телефон</p>
-                <a href="tel:+380992972639">+380(99) 297-26-39</a>
-                <p>E-mail</p>
-                <a href="mailto:info@volshebnaya-strana.com.ua"></a>
-                <p>Мы в социальных сетях</p>
-                <div class="contact__social">
-                    <a href="#"><img src="./assets/images/svg/darken--facebook.svg" alt="faceboock"></a>
-                    <a href="#"><img src="./assets/images/svg/darken--instagram.svg" alt="instagram"></a>
-                    <a href="#"><img src="./assets/images/svg/darken--vk.com 2.svg" alt="vk"></a>
-                    <a href="#"><img src="./assets/images/svg/darken-youtube.svg" alt="youtube"></a>
+            <div class="contact__inner">
+                <div class="contact__info">
+                    <p class="contact__title">Контактная информация компании ТМ «Волшебный Лес»</p>
+                    <p>Название</p>
+                    <span>ТМ «Волшебный Лес»</span>
+                    <p>Адрес</p>
+                    <span>Украина, Харьковская область, г. Харьков</span>
+                    <span>ул. Ивана Камышева, 9</span>
+                    <p>Телефон</p>
+                    <a href="tel:+380992972639">+380(99) 297-26-39</a>
+                    <p>E-mail</p>
+                    <a href="mailto:info@volshebnaya-strana.com.ua">info@volshebnaya-strana.com.ua</a>
+                    <p>Мы в социальных сетях</p>
+                    <div class="contact__social">
+                        <a href="#" target="_blank"><img src="./assets/images/svg/darken--facebook.svg" alt="faceboock"></a>
+                        <a href="#" target="_blank"><img src="./assets/images/svg/darken--instagram.svg" alt="instagram"></a>
+                        <a href="#" target="_blank"><img src="./assets/images/svg/darken--vk.com 2.svg" alt="vk"></a>
+                        <a href="#" target="_blank"><img src="./assets/images/svg/darken-youtube.svg" alt="youtube"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="contact__form">
-                <p class="contact__title">График работы</p>
-                <div><span>Пн-Пт –</span><p>10:00 – 18:00</p></div>
-                <div><span>Сб, Вс –</span><p>Выходной</p></div>
-                <p>В online-режиме заказы принимаются круглосуточно</p>
-                <p class="contact__title">Форма обратной связи</p>
-                <form class="contact__form-wrapp">
-                    <input type="text" placeholder="ваше имя*">
-                    <input type="email" placeholder="E-MAIL*">
-                    <input type="text" placeholder="тема*">
-                    <textarea placeholder="СООБЩЕНИЕ*"></textarea>
-                    <button class="button">отправить</button>
-                </form>
+                <div class="contact__form">
+                    <p class="contact__title">График Работы</p>
+                    <div class="contact__schedule">
+                        <div><span>Пн-Пт –</span><p>10:00 – 18:00</p></div>
+                        <div><span>Сб, Вс –</span><p>Выходной</p></div>
+                        <p>В online-режиме заказы принимаются круглосуточно</p>
+                    </div>
+                    <p class="contact__title">Форма обратной связи</p>
+                    <form class="contact__form-wrapp" action="">
+                        <input type="text" placeholder="ваше имя*">
+                        <input type="email" placeholder="e-mail*">
+                        <input type="text" placeholder="тема*">
+                        <textarea placeholder="сообщение*"></textarea>
+                        <button class="button" type="submit">отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
