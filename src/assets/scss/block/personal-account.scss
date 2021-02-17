@@ -93,10 +93,6 @@
             }
             a { 
                 text-transform: uppercase;
-                &:hover {
-                    text-decoration: underline;
-                    color: #303030;
-                }
                 @include b(mobile) {
                     font-size: 14px;
                     line-height: 1.21;
@@ -106,6 +102,8 @@
     }
 
     &__link{
+        display: inline-block;
+        width: 100%;
         &.active {
             border-bottom: 1px solid #303030;
             font-size: inherit;
