@@ -102,11 +102,8 @@
     }
 
     &__link{
-        display: inline-block;
-        width: 100%;
-        &.active {
+        &.activeLink {
             border-bottom: 1px solid #303030;
-            font-size: inherit;
         }
     }
 

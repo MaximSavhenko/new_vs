@@ -400,12 +400,6 @@ img {
 }
 
 .block-local-tasks-block {
-  .tabs {
-    position: fixed;
-    top: 79px;
-    z-index: 100000;
-    background: #fff;
-  }
   .nav-link {
     font-size: 16px;
   }
@@ -442,6 +436,24 @@ img {
 
 }
 
+.facebook {
+  position: relative;
+  max-width: 160px;
+  width: 100%;
+}
+
+.fb_iframe_widget {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  height: 40px;
+  #u_0_3_L0 {
+    display: none;
+  }
+}
+
 
 @import "block/slider.scss";
 @import "block/star.scss";
@@ -471,3 +483,7 @@ img {
 @import "block/loading.scss";
 @import "block/detailed-view.scss";
 @import "block/contact.scss";
+@import "block/go-to.scss";
+@import "block/check-in.scss";
+@import "block/forgot-password.scss";
+

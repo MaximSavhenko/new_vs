@@ -443,65 +443,66 @@
         </div>
     </div>
     
-    <div class="detailed-view">
+    
+    <div class="personal-account">
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">ГЛАВНАЯ</a></li>
-                    <li class="breadcrumb-item"><a href="#">АДМИНИСТРАТОР  </a></li>
-                    <li class="breadcrumb-item"><a href="#">Заказы</a></li>
-                </ol>
-            </nav>
-            <div class="detailed-view__wrap">
-                <p class="detailed-view__order-number">заказ 6444</p>
-                <div class="detailed-view__tabs">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Заголовок</th>
-                                <th>Цена</th>
-                                <th>Количество</th>
-                                <th>Итого</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span>Заголовок</span>Органийзер для бисера с прозрачной крышкой FLZB-032 (FLZB-032)</td>
-                                <td><span>Цена</span>75 грн</td>
-                                <td><span>Количество</span>1</td>
-                                <td><span>Итого</span>75 грн</td>
-                            </tr>
-                            <tr>
-                                <td><span>Заголовок</span>Катушки для ниток FLC-079 (S) (6 штук) (FLC-079 (S))</td>
-                                <td><span>Цена</span>40 грн</td>
-                                <td><span>Количество</span>1</td>
-                                <td><span>Итого</span>40 грн</td>
-                            </tr>
-                            <tr>
-                                <td><span>Заголовок</span>Схема для вышивания бисером “Море” FLS-054D (Fls-054D) </td>
-                                <td><span>Цена</span>75 грн</td>
-                                <td><span>Количество</span>1</td>
-                                <td><span>Итого</span>75 грн</td>
-                            </tr>
-                            <tr>
-                                <td><span>Заголовок</span>Набор для вышивания бисером по дереву FLK-135 (FLK-135)</td>
-                                <td><span>Цена</span>65 грн</td>
-                                <td><span>Количество</span>3</td>
-                                <td><span>Итого</span>195 грн</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="detailed-view__total-wrap">
-                    <div class="detailed-view__comment">Комментарий: <span>Тест</span></div>
-                    <div class="detailed-view__total">
-                        <div class="detailed-view__total-descr">Общий вес: <span> 1,215 кг</span></div>
-                        <div class="detailed-view__total-descr">сумма заказа: <span>1020 грн</span></div>
-                    </div>
-                </div>
-            </div>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">ГЛАВНАЯ</a></li>
+                <li class="breadcrumb-item"><a href="#">КАБИНЕТ </a></li>
+                <li class="breadcrumb-item"><a href="#">мой профиль</a></li>
+            </ol>
+            <div class="personal-account__wrap">
+                <nav class="personal-account__nav">
+                    <p class="personal-account__title">МОЙ ПРОФИЛЬ</p>
+                    <ul>
+                        <li ><a href="/" class="personal-account__link">Регистрация</a></li>
+                        <li><a href="/go-to.html" class="personal-account__link activeLink">Войти</a></li>
+                        <li><a href="/" class="personal-account__link">забыли пароль? </a></li>
+                    </ul>
+                </nav>            <div class="go-to">
+                    <span class="go-to__title">ВХОД ЧЕРЕЗ СОЦИАЛЬНЫЕ СЕТИ</span>
+                    <div class="comment-form__auth">
+                        <div class="comment-form__auth-item">
+                            <a href="#">
+                                <span><img src="../assets/images/svg/facebook_auth.svg" alt="Facebook"></span>
+                                <p>Facebook</p>
+                            </a>
+                        </div>
+                        <div class="comment-form__auth-item">
+                            <a href="#">
+                                <span><img src="../assets/images/svg/google_auth.svg" alt="Facebook"></span>
+                                <p>Google</p>
+                            </a>
+                        </div>
+                        <div class="comment-form__auth-item">
+                            <a href="#">
+                                <span><img src="../assets/images/svg/vk_auth.svg" alt="Facebook"></span>
+                                <p>Вконтакте</p>
+                            </a>
+                        </div>
+                    </div>    <form action="" class="go-to__form">
+                        <div class="go-to__email">
+                            <label>email или имя пользователя*</label>
+                            <input type="email">
+                        </div>
+                        <div class="go-to__password">
+                            <label>пароль*</label>
+                            <input type="password">
+                        </div>
+                        <div class="go-to__remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Запомнить меня</label>
+                        </div>
+                        <div class="go-to__captcha"></div>
+                        <div class="go-to__btn">
+                            <button type="submit" class="button">ВОЙТИ</button>
+                            <a href="#" class="go-to__forgot">Забыли пароль?</a>
+                        </div>
+                    </form>
+                </div>        </div>
         </div>
     </div>
+    
 
     <footer class="footer">
         <div class="container">

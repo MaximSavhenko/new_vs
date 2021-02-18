@@ -537,13 +537,6 @@ img {
     }
 }
 
-.block-local-tasks-block .tabs {
-    position: fixed;
-    top: 79px;
-    z-index: 100000;
-    background: #fff;
-}
-
 .block-local-tasks-block .nav-link {
     font-size: 16px;
 }
@@ -580,6 +573,25 @@ img {
 .user-login-form .description {
     max-width: 700px;
     font-size: 16px;
+}
+
+.facebook {
+    position: relative;
+    max-width: 160px;
+    width: 100%;
+}
+
+.fb_iframe_widget {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    height: 40px;
+}
+
+.fb_iframe_widget #u_0_3_L0 {
+    display: none;
 }
 
 .slick-track {
@@ -2927,6 +2939,17 @@ img {
 .footer__social a img, .footer__payment a img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.footer__payment div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__payment img:last-child {
+    margin-left: 6px;
 }
 
 .footer__payment {
@@ -6910,14 +6933,8 @@ img {
     }
 }
 
-.personal-account__link {
-    display: inline-block;
-    width: 100%;
-}
-
-.personal-account__link.active {
+.personal-account__link.activeLink {
     border-bottom: 1px solid #303030;
-    font-size: inherit;
 }
 
 .personal-account__form {
@@ -7773,5 +7790,250 @@ img {
 @media (max-width: 767px) {
     .contact__schedule {
         padding-bottom: 32px;
+    }
+}
+
+.go-to {
+    width: 100%;
+    max-width: 514px;
+    margin: 88px 0 328px 262px;
+}
+
+@media (max-width: 1023px) {
+    .go-to {
+        margin: 0px 0px 328px  0px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .go-to .comment-form__auth {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .go-to .comment-form__auth-item {
+        width: 100%;
+        height: 100%;
+        max-width: 139px;
+        margin-right: 0;
+    }
+
+    .go-to .comment-form__auth-item p {
+        width: 67%;
+    }
+}
+
+.go-to__title {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #303030;
+}
+
+.go-to__form label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #303030;
+    text-transform: uppercase;
+}
+
+.go-to__form input {
+    max-width: 512px;
+}
+
+@media (max-width: 1023px) {
+    .go-to__form input {
+        max-width: 100%;
+    }
+}
+
+.go-to__email {
+    margin-bottom: 11px;
+}
+
+.go-to__password {
+    margin-bottom: 15px;
+}
+
+.go-to__remember {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.go-to__remember input[type=checkbox] {
+    display: none;
+}
+
+.go-to__remember input[type=checkbox]:checked ~ label::after {
+    opacity: 1;
+}
+
+.go-to__remember label {
+    text-transform: none;
+    margin-bottom: 0;
+    line-height: 1.6;
+    font-size: 14px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.go-to__remember label:before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    transition: all .1s;
+}
+
+.go-to__remember label::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 0;
+    top: 6px;
+    left: 4px;
+    transition: all .2s;
+    display: block;
+}
+
+.go-to__captcha {
+    width: 293px;
+    height: 76px;
+    border-radius: 3px;
+    background-color: #ccc;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .go-to__captcha {
+        width: 100%;
+    }
+}
+
+.go-to__btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.go-to .button {
+    max-width: 205px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 1023px) {
+    .go-to .button {
+        max-width: 177px;
+    }
+}
+
+@media (max-width: 767px) {
+    .go-to .button {
+        max-width: 100%;
+    }
+}
+
+.go-to__forgot {
+    color: #000;
+    font-size: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #303030;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.forgot-password {
+    width: 100%;
+    max-width: 457px;
+    height: 100vh;
+    margin: 88px 0px 0px 111px;
+}
+
+@media (max-width: 1023px) {
+    .forgot-password {
+        margin: 0;
+    }
+}
+
+.forgot-password__title {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #303030;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+    .forgot-password__title {
+        margin-bottom: 24px;
+    }
+}
+
+.forgot-password__descr {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #303030;
+    margin-bottom: 16px;
+}
+
+.forgot-password__form label {
+    line-height: 1.6;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #303030;
+    margin-bottom: 8px;
+}
+
+.forgot-password__form input {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+    .forgot-password__form input {
+        margin-bottom: 32px;
+    }
+}
+
+.forgot-password .button {
+    max-width: 278px;
+    margin: 0;
+}
+
+@media (max-width: 1023px) {
+    .forgot-password .button {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .forgot-password .button {
+        max-width: 100%;
     }
 }

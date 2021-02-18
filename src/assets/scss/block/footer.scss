@@ -237,6 +237,18 @@
     }
   }
 
+  &__payment{
+    div {
+      display: flex;
+      align-items: center;
+    }
+      img {
+        &:last-child {
+          margin-left: 6px;
+        }
+      }
+  }
+
   &__payment {
     margin-bottom: 0;
     @include b(767) {

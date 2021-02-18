@@ -13,22 +13,24 @@ $(document).ready(function () {
 
   $("#basket").click(function () {
     $(".basket").addClass('active');
-    $(".basket__close").click(function () {
-      $(".basket").removeClass('active');
-    });
+  });
+  
+  $(".basket__close").click(function () {
+    $(".basket").removeClass('active');
   });
 
   $("#search").click(function () {
     $(".search").addClass('active');
-    $(".search__close").click(function () {
-      $(".search").removeClass('active');
+    $(document).mouseup(function (e) {
+      var container = $(".search");
+      if (container.has(e.target).length === 0){
+        container.removeClass('active');
+      }
     });
-      $(document).mouseup(function (e) {
-        var container = $(".search");
-        if (container.has(e.target).length === 0){
-            container.removeClass('active');
-        }
-      });
+  });
+  
+  $(".search__close").click(function () {
+    $(".search").removeClass('active');
   });
 
   $(".product__responsive-title").click(function () {

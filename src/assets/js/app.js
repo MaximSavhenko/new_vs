@@ -78,19 +78,6 @@ function togglePassword() {
 
 togglePassword();
 
-function linkAction() {
-
- let link = querySelectorAll("personal-account__link")
-      console.log(link)
-    link.forEach(link=>{link.classList.remove("active")
-    console.log(link)
-    if (regExp  link.href windows.location)   link.classList.add("active");
-  });
-
-}
-
-document.addEventListener('DOMContentLoaded', linkAction());
-
 
 
 
