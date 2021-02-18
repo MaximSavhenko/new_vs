@@ -9,16 +9,6 @@ function toggleMobileMenu() {
 
 toggleMobileMenu();
 
-function openSubLang() {
-  var spanBtn = document.getElementById("openSettingLang");
-
-  spanBtn.onclick = function () {
-    spanBtn.classList.toggle("transformArrow");
-  };
-}
-
-openSubLang();
-
 function openArrow() {
   let arrow = document.querySelectorAll(".topMenu__hiddenMenu-item");
   arrowSub = document.querySelectorAll(".topMenu__hiddenMenu-sub-item");
