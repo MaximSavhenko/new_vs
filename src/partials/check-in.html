@@ -1,8 +1,95 @@
 <div class="check-in">
-    <form action="" class="check-in__country">
-        
-    </form>
-    <form action="" class="check-in__region">
-
+    <form action="" class="check-in__form">
+        <div class="check-in__form-wrap">
+            <div class="check-in__left-form">
+                <div class="check-in__country">
+                    <label>страна*</label>
+                    <input type="text">
+                </div>
+                <div class="check-in__input">
+                    <div class="check-in__question">
+                        <label>email*</label>
+                        <button type="button" class="question"><img src="./assets/images/svg/pregunta.svg" alt=""></button>
+                        <div class="check-in__hint">
+                            Существующий адрес электронной почты. 
+                            Все почтовые сообщения с сайта будут отсылаться на этот адрес. Адрес электронной почты не будет публкиоваться и будет использоваться только 
+                            по вашему желанию: для восстановления пароля или для получения новостей и уведомления по электронной почте.
+                        </div>
+                    </div>
+                    <input type="email">
+                </div>
+                <div class="check-in__input">
+                    <label>пароль*</label>
+                   <div class="check-in__password">
+                        <input type="password" class="passInput">
+                        <button type="button" class="passBtn">
+                            <img src="./assets/images/svg/eye.svg" alt="Показать пароль">
+                        </button>
+                   </div>
+                </div>
+                <div class="check-in__input">
+                    <label>имя*</label>
+                    <input type="text">
+                </div>
+                <div class="check-in__input">
+                    <div class="check-in__question">
+                        <label>ник</label>
+                        <button type="button" class="question"><img src="./assets/images/svg/pregunta.svg" alt=""></button>
+                        <div class="check-in__hint">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta id reprehenderit numquam quae et corporis voluptatum ut, voluptatibus dignissimos iure!
+                        </div>
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="check-in__right-form">
+                <div class="check-in__input">
+                    <label>регион/область*</label>
+                    <input type="text">
+                </div>
+                <div class="check-in__input">
+                    <div class="check-in__question">
+                        <label>телефон*</label>
+                        <button type="button" class="question"><img src="./assets/images/svg/pregunta.svg" alt=""></button>
+                        <div class="check-in__hint">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                    <input type="number">
+                </div>
+                <div class="check-in__input">
+                    <div class="check-in__question">
+                        <label>повторите пароль*</label>
+                        <button type="button" class="question"><img src="./assets/images/svg/pregunta.svg" alt=""></button>
+                        <div class="check-in__hint">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.
+                        </div>
+                    </div>
+                    <div class="check-in__password">
+                        <input type="password" class="passInput">
+                        <button type="button" class="passBtn">
+                            <img src="./assets/images/svg/eye.svg" alt="Показать пароль">
+                        </button>
+                    </div>
+                </div>
+                <div class="check-in__input">
+                    <label>фамилия*</label>
+                    <input type="text">
+                </div>
+                <div class="check-in__input">
+                    <label>дата рождения</label>
+                    <input type="text" placeholder="ДД.ММ.ГГГГ">
+                </div>
+            </div>
+        </div>
+        <div class="check-in__agreement">
+            <p class="check-in__warning">*Пожалуйста, корректно заполните все отмеченные поля</p>
+            <div class="check-in__checkbox">
+                <input type="checkbox" id="agreement">
+                <label for="agreement" class="checkbox">Отправляя эту форму, вы соглашаетесь с  </label>
+            </div>
+            <div class="check-in__captcha"></div>
+        </div>
+        <button class="button">регистрация</button>
     </form>
 </div>

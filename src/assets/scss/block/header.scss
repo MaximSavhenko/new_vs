@@ -280,10 +280,6 @@
         margin-left: 16px;
       }
 
-      &:nth-child(3) {
-        display: none;
-      }
-
       @include b(mobile) {
         margin-left: 30px;
       }
@@ -307,6 +303,25 @@
         &:last-child {
           display: none;
         }
+      }
+    }
+  }
+
+  .country-switch-form {
+    input {
+      display: none;
+    }
+    .form-control {
+      max-width: 132px;
+      border: none;
+      padding: 0;
+      &:focus {
+        border: none;
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: none;
       }
     }
   }

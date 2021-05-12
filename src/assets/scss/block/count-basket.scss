@@ -1,0 +1,16 @@
+.cart-block--summary__count {
+    position: absolute;
+    top: -11px;
+    right: -18px;
+    border: 1px solid #000;
+    font-size: 10px;
+    line-height: 1.2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -47,26 +47,36 @@ function scrollUp() {
 scrollUp();
 
 function togglePassword() {
-  let inputPassword = document.querySelectorAll(".personal-account__inputpass"),
-      btnPassword = document.querySelectorAll(".personal-account__passbtn"),
-      img = document.querySelectorAll("#inpImg"),
-      see = "./assets/images/svg/eye.svg",
-      hide = "./assets/images/svg/eye-off.svg"
+  let inputPassword = document.querySelectorAll(".passInput"),
+      btnPassword = document.querySelectorAll(".passBtn")
 
   for (let i = 0; i < btnPassword.length; i++) {
+    console.log(btnPassword[i]);
     for (let j = 0; j < inputPassword.length; j++) {
-      for (let y = 0; y < img.length; y++) {
         btnPassword[j].onclick = function () {
           inputPassword[j].type === "text" ? (inputPassword[j].type = "password") : (inputPassword[j].type = "text");
-          img[y].srs === see ? (img[y].srs = see) : (img[y].srs = hide);
-          console.log(img[y].srs)
         };
       }
     }
-  }
 }
 
 togglePassword();
+
+function openQuestion() {
+  let question = document.querySelectorAll('.check-in__hint'),
+      btnQuestion = document.querySelectorAll('.question')
+
+      for (let i = 0; i < question.length; i++) {
+        for (let j = 0; j < btnQuestion.length; j++) {
+          btnQuestion[j].onclick = function () {
+            question[j].classList.toggle('openQ')
+          }
+        }
+      }
+}
+
+openQuestion();
+
 
 
 
